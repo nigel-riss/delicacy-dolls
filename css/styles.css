@@ -1,0 +1,545 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?78445038');
+  src: url('../font/fontello.eot?78445038#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?78445038') format('woff'),
+       url('../font/fontello.ttf?78445038') format('truetype'),
+       url('../font/fontello.svg?78445038#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?78445038#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-tumblr:before { content: '\e800'; } /* '' */
+.icon-vkontakte:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
+
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display SC'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v5/G0-tvBxd4eQRdwFKB8dRkbGoYc2k__mzXRGmHiKhNRg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display SC'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v5/G0-tvBxd4eQRdwFKB8dRkagSM-COZYaf0ROcKl7uZVE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display SC'), local('PlayfairDisplaySC-Regular'), url(https://fonts.gstatic.com/s/playfairdisplaysc/v5/G0-tvBxd4eQRdwFKB8dRkRUcjaGRfmzOW8pfsS-qBq8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body {
+    /* box-model */
+    padding: 0;
+    margin: 0;
+    
+    /* visual */
+    background-color: #040404;
+    
+    /* typography */
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    /* positioning */
+    position: relative;
+    
+    /* box model */
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.header {
+    /* box model */
+    height: 100px;
+    
+    /* visual */
+    background-color: #ccc;
+    background-image: linear-gradient(#fff, #f8f8f8);
+}
+
+.main-header{
+    position: relative;
+    
+    /* box model */
+    padding: 0;
+    padding-left: 85px;
+    padding-top: 20px;
+    margin: 0;
+    
+    /* typography */
+    color: #000;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.header .author{
+    position: relative;
+    
+    padding-left: 85px;
+    
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
+    color: #000;
+}
+
+.logo {
+    /* positioning */
+    position: absolute;
+    left: 0;
+    top: 12px;
+    
+    /* box model */
+    
+    /* typography */
+    font-family: "Playfair Display SC", serif;
+    text-align: center;
+    
+    /* visual */
+    opacity: .9;
+}
+
+.logo svg{
+    width: 80px;
+    height: 80px;
+}
+
+.main-nav{
+    /* positioning */
+    position: absolute;
+    top: 40px;
+    
+    /* box model */
+    width: 100%;
+    
+    /* typography */
+    text-align: right;
+}
+
+.main-nav ul {
+    /* box model */
+    padding: 0;
+    margin: 0;
+    
+    /* other */
+    list-style: none;
+}
+
+.main-nav li {
+    /* box model */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-nav a {
+    /* positioning */
+    position: relative;
+    
+    /* box model */
+    padding: 0 20px;
+    padding-bottom: 10px;
+    
+    /* typography */
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.main-nav a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #000;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.main-nav a:hover::after,
+.main-nav a:focus::after {
+	height: 1px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.hero {
+    /* positioning */
+    position: relative;
+    
+    /* box model */
+    margin: 0 auto;
+    height: 700px;
+    
+    /* visual */
+    background-image: url("../img/slide.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/.hero-back {
+    /* positioning */
+    position: absolute;
+    top: 0;
+    
+    /* box model */
+    height: 100%;
+    width: 100%;
+    
+    /* visual */
+    background-image: url(../img/hero-back.jpg);
+}
+
+.social {
+    display: none;
+    /* positioning */
+    position: absolute;
+    bottom: 35px;
+}
+
+.social ul {
+    /* box model */
+    padding: 0;
+    margin: 0;
+    
+    /* other */
+    list-style: none;
+}
+
+.social li {
+    /* box model */
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.social a {
+    /* box model */
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+    
+    /* typography */
+    color: #d4d4d4;;
+    font-family: "fontello";
+    
+    /* visual */
+    transition: all .3s ease;
+}
+
+.social a:hover {
+    /* visual */
+    background-color: #fff;
+    
+    /* typography */
+    color: #000;
+}
+
+.about {
+    background-color: #aeaeae;
+}
+
+.about h2 {
+    /* box model */
+    margin: 0;
+    padding: 80px 0;
+    padding-bottom: 40px;
+    
+    /* typography */
+    color: #000;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 60px;
+}
+
+.about p {
+    /* typography */
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.44;
+}
+
+.about-dolls {
+    /* box model */
+    /* height: 1100px; */
+    height: 825px;
+    /*#cdcdcd
+    #f1f1f1*/
+    /* visual */
+    background-color: #cdcdcd;
+    /* background-image: -webkit-linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%);
+    background-image: -o-linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%);
+    background-image: linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%); */
+    background-image: -webkit-linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
+    background-image: -o-linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
+    background-image: linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
+}
+
+.about-dolls .container {
+    /* visual */
+    background-image: url(../img/about-dolls-back.jpg);   
+    background-repeat: no-repeat;
+    background-position: right 115px;
+    
+    background-size: 80%;
+}
+
+.about-dolls p {
+    /* box model */
+    /* width: 600px; */
+    width: 550px;
+}
+
+/*.about-dolls p:nth-of-type(2) { width: 550px; }
+.about-dolls p:nth-of-type(3) { width: 500px; }
+.about-dolls p:nth-of-type(4) { width: 450px; }*/
+
+/*.about-dolls p:nth-of-type(2) { width: 620px; }
+.about-dolls p:nth-of-type(3) { width: 540px; }
+.about-dolls p:nth-of-type(4) { width: 400px; }*/
+
+
+.about-porcelain {
+    /* box model */
+    height: 825px;
+    
+    /* visual */
+    background-color: #f1f1f1;
+    background-image: linear-gradient(#f1f1f1, #f8f8f8);
+}
+
+.about-porcelain h2 {
+    /* box model */
+    //padding-left: 500px;
+    /* typography */
+    text-align: right;
+}
+
+.about-porcelain p {
+    /* box model */
+    ..padding-left: 400px;
+    
+    text-align: right;
+}
+
+.about-porcelain p:nth-of-type(2) { ..padding-left: 450px; }
+.about-porcelain p:nth-of-type(3) { ..padding-left: 500px; }
+
+
+.about-porcelain .container {
+    /* visual */
+    background-image: url(../img/about-porcelain-back.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+    background-size: 80%;
+}
+
+.about-polyurethan {
+    /* box model */
+    height: 825px;
+    
+    /* visual */
+    background-color: #f8f8f8;
+}
+
+.about-polyurethan .container {
+    /* visual */
+    background-image: url(../img/about-polyurethan-back.jpg);
+    background-repeat: no-repeat;
+    background-position: right -50px;
+    
+    background-size: 75%;
+}
+
+.about-polyurethan p {
+    /* box model */
+    width: 550px;
+}
+
+.about-polyurethan p:nth-of-type(3) { width: 450px; }
+
+.main-footer {
+    /* positioning */
+    position: relative;
+    
+    /* box model */
+    height: 700px;
+    
+    /* visual */
+    background-image: url(../img/contacts-back.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.main-footer h2 {
+    /* box model */
+    margin: 0;
+    padding: 80px 0;
+    padding-bottom: 40px;
+    
+    /* typography */
+    color: #fff;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 60px;
+}
+
+.main-footer p {
+    margin-bottom: 40px;
+    
+    line-height: 1.7;
+    
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.main-footer a {
+    /* box model */
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #ccc;
+    
+    /* typography */
+    color: #fff;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+
+.main-footer a:hover {
+    color: #040404;
+    background-color: #fff;
+}
+
+.main-footer ul {
+    /* box model */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-block {
+    position: absolute;
+    bottom: 20px;
+}
+
+.page-name {
+    /* box model */
+    padding: 80px 0;
+    /* typography */
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 42px;
+    text-align: center;
+}
