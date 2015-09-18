@@ -358,6 +358,7 @@ body {
     font-weight: normal;
     font-size: 38px;
     line-height: 60px;
+    text-align: center;
 }
 
 .about p {
@@ -372,7 +373,7 @@ body {
 .about-dolls {
     /* box model */
     /* height: 1100px; */
-    height: 825px;
+    /height: 825px;
     /*#cdcdcd
     #f1f1f1*/
     /* visual */
@@ -380,24 +381,30 @@ body {
     /* background-image: -webkit-linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%);
     background-image: -o-linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%);
     background-image: linear-gradient(#cdcdcd 0px, #cdcdcd 180px, #f1f1f1 1080px, #f1f1f1 100%); */
-    background-image: -webkit-linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
-    background-image: -o-linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
-    background-image: linear-gradient(#cdcdcd 0px, #cdcdcd 115px, #f1f1f1 810px, #f1f1f1 100%);
+    background-image: -webkit-linear-gradient(#cdcdcd 0px, #f1f1f1 695px, #f1f1f1 100%);
+    background-image: -o-linear-gradient(#cdcdcd 0px, #f1f1f1 695px, #f1f1f1 100%);
+    background-image: linear-gradient(#cdcdcd 0px, #f1f1f1 695px, #f1f1f1 100%);
 }
 
 .about-dolls .container {
     /* visual */
     background-image: url(../img/about-dolls-back.jpg);   
     background-repeat: no-repeat;
-    background-position: right 115px;
+    background-position: -80px top;
     
     background-size: 80%;
+}
+
+.about-dolls h2 {
+    padding-top: 700px;
 }
 
 .about-dolls p {
     /* box model */
     /* width: 600px; */
-    width: 550px;
+    padding-left: 100px;
+    width: 800px;
+    
 }
 
 /*.about-dolls p:nth-of-type(2) { width: 550px; }
@@ -411,43 +418,41 @@ body {
 
 .about-porcelain {
     /* box model */
-    height: 825px;
     
     /* visual */
     background-color: #f1f1f1;
-    background-image: linear-gradient(#f1f1f1, #f8f8f8);
+    background-image: linear-gradient(#f1f1f1 0px, #f8f8f8 825px, #f8f8f8 100%);
 }
 
 .about-porcelain h2 {
     /* box model */
     //padding-left: 500px;
     /* typography */
-    text-align: right;
+    padding-top: 780px;
 }
 
 .about-porcelain p {
     /* box model */
     ..padding-left: 400px;
     
-    text-align: right;
+    //text-align: right;
+    padding-left: 100px;
+    width: 800px;
 }
-
-.about-porcelain p:nth-of-type(2) { ..padding-left: 450px; }
-.about-porcelain p:nth-of-type(3) { ..padding-left: 500px; }
-
 
 .about-porcelain .container {
     /* visual */
     background-image: url(../img/about-porcelain-back.jpg);
     background-repeat: no-repeat;
-    background-position: left bottom;
+    background-position: 120px top;
     
     background-size: 80%;
 }
 
 .about-polyurethan {
     /* box model */
-    height: 825px;
+    /height: 825px;
+    padding-bottom: 80px;
     
     /* visual */
     background-color: #f8f8f8;
@@ -457,17 +462,20 @@ body {
     /* visual */
     background-image: url(../img/about-polyurethan-back.jpg);
     background-repeat: no-repeat;
-    background-position: right -50px;
+    background-position: center top;
     
     background-size: 75%;
 }
 
-.about-polyurethan p {
-    /* box model */
-    width: 550px;
+.about-polyurethan h2 {
+    padding-top: 700px;
 }
 
-.about-polyurethan p:nth-of-type(3) { width: 450px; }
+.about-polyurethan p {
+    padding-left: 100px;
+    /* box model */
+    width: 800px;
+}
 
 .main-footer {
     /* positioning */
@@ -487,6 +495,7 @@ body {
     margin: 0;
     padding: 80px 0;
     padding-bottom: 40px;
+    padding-left: 100px;
     
     /* typography */
     color: #fff;
@@ -498,6 +507,8 @@ body {
 
 .main-footer p {
     margin-bottom: 40px;
+    padding-left: 100px;
+    width: 800px;
     
     line-height: 1.7;
     
@@ -532,6 +543,8 @@ body {
 .info-block {
     position: absolute;
     bottom: 20px;
+    
+    padding-left: 100px;
 }
 
 .page-name {
