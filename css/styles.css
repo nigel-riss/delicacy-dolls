@@ -179,6 +179,14 @@ body {
 }
 
 .logo {
+    /*block model*/
+    width: 80px;
+    height: 80px;
+    padding-top: 12px;
+    float: left;
+}
+
+/.logo {
     /* positioning */
     position: absolute;
     left: 0;
@@ -194,7 +202,7 @@ body {
     opacity: .9;
 }
 
-.logo svg{
+/.logo svg{
     width: 80px;
     height: 80px;
 }

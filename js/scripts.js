@@ -1,4 +1,4 @@
-var heroDiv = document.querySelector(".hero");
+/*var heroDiv = document.querySelector(".hero");
 var idealRatio = 0.5625;
 
 function onResize(){
@@ -30,4 +30,14 @@ function onResize(){
 
 onResize();
 
-window.onresize = onResize;
+window.onresize = onResize;*/
+
+var testPlase = document.querySelector(".main-header");
+var i = 0;
+
+function increaseI() {
+    i++;
+    testPlase.innerHTML = i;
+}
+
+setInterval(increaseI, 500000000000000);
