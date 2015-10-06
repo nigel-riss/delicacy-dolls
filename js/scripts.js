@@ -32,12 +32,32 @@ onResize();
 
 window.onresize = onResize;*/
 
-var testPlase = document.querySelector(".main-header");
-var i = 0;
 
-function increaseI() {
-    i++;
-    testPlase.innerHTML = i;
+var hero = document.querySelector(".hero");
+
+//HERO HEIGHT
+var maxHeight = 1080;
+hero.style.height = Math.min(maxHeight, (window.innerHeight)) + "px";
+
+//*/
+
+//SLIDER
+var slideIterator = 1;
+
+function changeSlide() {
+    hero.classList.remove("hero--slide-" + slideIterator);
+    (slideIterator === 3) ? slideIterator = 1 : slideIterator++;
+    hero.classList.add("hero--slide-" + slideIterator);
 }
 
-setInterval(increaseI, 500000000000000);
+setInterval(changeSlide, 5000);
+
+//*/
+
+//PARALAX
+window.onscroll = function() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    hero.style.backgroundPositionY = -scrolled / 2 + "px";
+}
+
+//*/

@@ -141,44 +141,20 @@ body {
 }
 
 .header {
+    position: absolute;
+    
     /* box model */
     height: 100px;
+    min-width: 100%;
     
     /* visual */
-    background-color: #ccc;
-    background-image: linear-gradient(#fff, #f8f8f8);
+    /*background-color: rgba(255, 255, 255, 0.75);*/
+    background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.3));
+    z-index: 1;
 }
 
-.main-header{
-    position: relative;
-    
-    /* box model */
-    padding: 0;
-    padding-left: 85px;
-    padding-top: 20px;
-    margin: 0;
-    
-    /* typography */
-    color: #000;
-    font-family: "Playfair Display SC", serif;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 1;
-}
 
-.header .author{
-    position: relative;
-    
-    padding-left: 85px;
-    
-    font-family: "Playfair Display SC", serif;
-    font-weight: normal;
-    font-size: 16px;
-    font-style: italic;
-    color: #000;
-}
-
-.logo {
+.header__logo {
     /*block model*/
     width: 80px;
     height: 80px;
@@ -186,25 +162,35 @@ body {
     float: left;
 }
 
-/.logo {
-    /* positioning */
-    position: absolute;
-    left: 0;
-    top: 12px;
+.header__caption{
+    position: relative;
     
     /* box model */
+    padding: 0;
+    padding-left: 85px;
+    padding-top: 15px;
+    margin: 0;
     
     /* typography */
+    color: #1e1b1d;
     font-family: "Playfair Display SC", serif;
-    text-align: center;
-    
-    /* visual */
-    opacity: .9;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 1;
 }
 
-/.logo svg{
-    width: 80px;
-    height: 80px;
+.header__author{
+    /* positionin */
+    position: relative;
+    
+    
+    padding-left: 85px;
+    
+    color: #1e1b1d;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
 }
 
 .main-nav{
@@ -212,7 +198,7 @@ body {
     position: absolute;
     top: 40px;
     
-    /* box model */
+    /* block model */
     width: 100%;
     
     /* typography */
@@ -220,7 +206,7 @@ body {
 }
 
 .main-nav ul {
-    /* box model */
+    /* block model */
     padding: 0;
     margin: 0;
     
@@ -229,7 +215,7 @@ body {
 }
 
 .main-nav li {
-    /* box model */
+    /* block model */
     display: inline-block;
     vertical-align: top;
 }
@@ -238,7 +224,7 @@ body {
     /* positioning */
     position: relative;
     
-    /* box model */
+    /* block model */
     padding: 0 20px;
     padding-bottom: 10px;
     
@@ -248,30 +234,32 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: normal;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
 .main-nav a::after {
+    /* positioning */
 	position: absolute;
 	top: 100%;
 	left: 0;
 	width: 100%;
 	height: 1px;
-	background: #000;
+	background: #1e1b1d;
 	content: '';
 	opacity: 0;
 	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
 	transition: height 0.3s, opacity 0.3s, transform 0.3s;
-	-webkit-transform: translateY(-10px);
-	-moz-transform: translateY(-10px);
-	transform: translateY(-10px);
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
 }
 
 .main-nav a:hover::after,
 .main-nav a:focus::after {
 	height: 1px;
-	opacity: 1;
+	opacity: 0.8;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
@@ -280,29 +268,32 @@ body {
 .hero {
     /* positioning */
     position: relative;
+    box-sizing: content-box;
     
     /* box model */
     margin: 0 auto;
     height: 700px;
     
     /* visual */
-    background-image: url("../img/slide.jpg");
+    
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
+    transition: 2s background-image linear;
 }
 
-/.hero-back {
-    /* positioning */
-    position: absolute;
-    top: 0;
-    
-    /* box model */
-    height: 100%;
-    width: 100%;
-    
-    /* visual */
-    background-image: url(../img/hero-back.jpg);
+.hero--slide-1 {
+    background-image: url("../img/slide-1.jpg");
+}
+
+.hero--slide-2 {
+    background-image: url("../img/slide-2.jpg");
+}
+
+.hero--slide-3 {
+    background-image: url("../img/slide-3.jpg");
 }
 
 .social {
@@ -370,6 +361,10 @@ body {
 }
 
 .about p {
+    /*block model*/
+    padding-bottom: 0;
+    margin-bottom: 0;
+    
     /* typography */
     font-family: "Roboto";
     font-weight: 300;
