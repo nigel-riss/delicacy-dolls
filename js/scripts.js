@@ -37,7 +37,7 @@ var hero = document.querySelector(".hero");
 
 //HERO HEIGHT
 var maxHeight = 1080;
-hero.style.height = Math.min(maxHeight, (window.innerHeight)) + "px";
+hero.style.height = Math.min(maxHeight, (window.innerHeight)) - 50 + "px";
 
 //*/
 
