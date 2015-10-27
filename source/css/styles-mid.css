@@ -5,8 +5,7 @@
     }
 }
 
-@media all and (min-width:720px) and (max-width:999px){
-    
+@media all and (min-width:720px) and (max-width:999px) {
     .container {
         /* box model */
         width: 96%;
@@ -18,13 +17,13 @@
         padding-left: 75px;
         font-size: 32px;
     }
-    
+
     .header .author {
         padding-left: 75px;
         font-size: 14px;
         font-weight: bold;
     }
-    
+
     .main-nav a {
         padding: 0 10px;
         font-size: 14px;
