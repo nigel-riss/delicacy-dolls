@@ -20,6 +20,17 @@ module.exports = function(grunt) {
                 expand: true,
                 src: ['source/sass/**/*.scss', 'source/css/**/*.css']
             }
+        },
+        
+        watch: {
+            style: {
+                files: ['source/sass/**/*.scss'],
+                tasks: ['sass', 'csscomb'],
+                options: {
+                    spawn: false,
+                    livereload: true
+                }
+            }
         }
     };
     
