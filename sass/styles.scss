@@ -1,0 +1,340 @@
+@import "fonts";
+@import "normalize";
+@import "icons";
+
+body {
+    /* box-model */
+    padding: 0;
+    margin: 0;
+
+    /* visual */
+    background-color: #040404;
+
+    /* typography */
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    /* positioning */
+    position: relative;
+
+    /* box model */
+    font-size: 10px;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+
+    /* box model */
+    height: 100px;
+    min-width: 100%;
+
+    /* visual */
+    /*background-color: rgba(255, 255, 255, 0.75);*/
+    background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .3));
+    z-index: 1;
+}
+
+
+.header__logo {
+    /*block model*/
+    width: 80px;
+    height: 80px;
+    padding-top: 12px;
+    float: left;
+}
+
+.header__caption {
+    position: relative;
+
+    /* box model */
+    padding: 0;
+    padding-left: 85px;
+    padding-top: 15px;
+    margin: 0;
+
+    /* typography */
+    color: #1e1b1d;
+    font-family: "Playfair Display SC", serif;
+    font-weight: 100;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.header__author {
+    /* positionin */
+    position: relative;
+    padding-left: 85px;
+    color: #1e1b1d;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.main-nav {
+    /* positioning */
+    position: absolute;
+    top: 40px;
+
+    /* block model */
+    width: 100%;
+
+    /* typography */
+    text-align: right;
+}
+
+.main-nav ul {
+    /* block model */
+    padding: 0;
+    margin: 0;
+
+    /* other */
+    list-style: none;
+}
+
+.main-nav li {
+    /* block model */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-nav a {
+    /* positioning */
+    position: relative;
+
+    /* block model */
+    padding: 0 20px;
+    padding-bottom: 10px;
+
+    /* typography */
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main-nav a::after {
+    /* positioning */
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    /* block model */
+    width: 100%;
+    height: 1px;
+
+    /* visual */
+    background: #1e1b1d;
+    content: "";
+    opacity: 0;
+    -webkit-transition: height .3s, opacity .3s, -webkit-transform .3s;
+       -moz-transition: height .3s, opacity .3s, -moz-transform .3s;
+            transition: height .3s, opacity .3s, transform .3s;
+    -webkit-transform: translateY(10px);
+       -moz-transform: translateY(10px);
+            transform: translateY(10px);
+}
+
+.main-nav a:hover::after,
+.main-nav a:focus::after {
+    height: 1px;
+    opacity: .8;
+    -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+            transform: translateY(0px);
+}
+
+.hero {
+    /* positioning */
+    position: relative;
+    box-sizing: content-box;
+
+    /* box model */
+    margin: 0 auto;
+    height: 700px;
+
+    /* visual */
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 2s background-image linear;
+}
+
+.hero--slide-1 {
+    background-image: url("../img/slide-1.jpg");
+}
+
+.hero--slide-2 {
+    background-image: url("../img/slide-2.jpg");
+}
+
+.hero--slide-3 {
+    background-image: url("../img/slide-3.jpg");
+}
+
+.about {
+    background-color: #f1f1f1;
+}
+
+.about-dolls__image {
+    width: 100%;
+}
+
+.about-dolls__caption {
+    /* block model */
+    margin: 0;
+    padding-left: 10%;
+    width: 80%;
+    padding-bottom: 40px;
+
+    /* typography */
+    color: #000000;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 38px;
+    font-size: 380%;
+    line-height: 60px;
+    text-align: center;
+}
+
+.about-dolls__text {
+    /*block model*/
+    padding-left: 10%;
+    width: 80%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    /* typography */
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.44;
+}
+
+.about-dolls__text:last-of-type {
+    padding-bottom: 80px;
+}
+
+.main-footer {
+    /* positioning */
+    position: relative;
+
+    /* box model */
+    height: 700px;
+
+    /* visual */
+    background-image: url(../img/contacts-back.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.main-footer h2 {
+    /* box model */
+    margin: 0;
+    padding: 80px 0;
+    padding-bottom: 40px;
+    padding-left: 100px;
+
+    /* typography */
+    color: #ffffff;
+    font-family: "Playfair Display SC", serif;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 60px;
+}
+
+.main-footer p {
+    margin-bottom: 40px;
+    padding-left: 100px;
+    width: 800px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.main-footer a {
+    /* box model */
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #cccccc;
+
+    /* typography */
+    color: #ffffff;
+    text-decoration: none;
+    transition: all linear .3s;
+}
+
+.main-footer a:hover {
+    color: #040404;
+    background-color: #ffffff;
+}
+
+.main-footer ul {
+    /* box model */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-block {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 100px;
+}
+
+.social {
+    display: none;
+    /* positioning */
+    position: absolute;
+    bottom: 35px;
+}
+
+.social ul {
+    /* box model */
+    padding: 0;
+    margin: 0;
+
+    /* other */
+    list-style: none;
+}
+
+.social li {
+    /* box model */
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.social a {
+    /* box model */
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+
+    /* typography */
+    color: #d4d4d4;;
+    font-family: "fontello";
+
+    /* visual */
+    transition: all .3s ease;
+}
+
+.social a:hover {
+    /* visual */
+    background-color: #ffffff;
+
+    /* typography */
+    color: #000000;
+}
