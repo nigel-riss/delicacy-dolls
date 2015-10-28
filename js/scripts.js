@@ -32,32 +32,49 @@ onResize();
 
 window.onresize = onResize;*/
 
+(function() {
+    var hero = document.querySelector(".hero");
 
-var hero = document.querySelector(".hero");
+    //HERO HEIGHT
+    var maxHeight = 1080;
+    //hero.style.height = Math.min(maxHeight, (window.innerHeight)) - 50 + "px";
 
-//HERO HEIGHT
-var maxHeight = 1080;
-hero.style.height = Math.min(maxHeight, (window.innerHeight)) - 50 + "px";
+    //*/
 
-//*/
+    //SLIDER
+    //var slideIterator = 1;
+    //
+    //function changeSlide() {
+    //    hero.classList.remove("hero--slide-" + slideIterator);
+    //    (slideIterator === 3) ? slideIterator = 1 : slideIterator++;
+    //    hero.classList.add("hero--slide-" + slideIterator);
+    //}
 
-//SLIDER
-var slideIterator = 1;
+    //setInterval(changeSlide, 5000);
 
-function changeSlide() {
-    hero.classList.remove("hero--slide-" + slideIterator);
-    (slideIterator === 3) ? slideIterator = 1 : slideIterator++;
-    hero.classList.add("hero--slide-" + slideIterator);
-}
+    //*/
 
-setInterval(changeSlide, 5000);
+    //PARALAX
+    //    window.onscroll = function() {
+    //        var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    //        hero.style.backgroundPositionY = -scrolled / 2 + "px";
+    //    };
+    
+    //MAIN MENU
+    var logo = document.querySelector(".logo");
+    var mainMenu = document.querySelector(".main-menu");
+    var menuButton = document.querySelector(".menu-button");
+    menuButton.addEventListener("click", function(event) {
+        if (logo.classList.contains("logo--menu-shown")) {
+            logo.classList.remove("logo--menu-shown");
+            mainMenu.classList.remove("main-menu--shown");
+        } else {
+            logo.classList.add("logo--menu-shown");
+            mainMenu.classList.add("main-menu--shown");
+        }
+    });
+})();
 
-//*/
 
-//PARALAX
-window.onscroll = function() {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    hero.style.backgroundPositionY = -scrolled / 2 + "px";
-}
 
 //*/
