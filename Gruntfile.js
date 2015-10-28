@@ -1,31 +1,33 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     "use strict";
-    
+
     require('load-grunt-tasks')(grunt);
-    
+
     var config = {
         pkg: grunt.file.readJSON('package.json'),
-        
-        
+
+
         sass: {
             style: {
+                expand: true,
                 files: [{
-                    'source/css/styles.css': 'source/sass/style.scss'
+                    'source/css/styles.css': 'source/sass/styles.scss'
                 }]
             }
         },
-        
+
         csscomb: {
             style: {
                 expand: true,
                 src: ['source/sass/**/*.scss', 'source/css/**/*.css']
             }
         },
-        
+
         watch: {
             style: {
                 files: ['source/sass/**/*.scss'],
                 tasks: ['sass', 'csscomb'],
+                // tasks: ['sass', 'postcss'],
                 options: {
                     spawn: false,
                     livereload: true
@@ -33,6 +35,6 @@ module.exports = function(grunt) {
             }
         }
     };
-    
+
     grunt.initConfig(config);
 };

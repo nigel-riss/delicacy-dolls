@@ -1,0 +1,33 @@
+.hero {
+    // positioning
+    position: relative;
+
+    // block model
+    height: 600px;
+
+    &__slide {
+        // positioning
+        position: absolute;
+
+        // block model
+        height: 100%;
+        width: 100%;
+        background-position: center 0;
+        background-attachment: fixed;
+
+        &--1 {
+            //
+            background-image: url(../img/slide-1-320.jpg);
+        }
+
+        &--2 {
+            //
+            background-image: url(../img/slide-2-320.jpg);
+        }
+
+        &--3 {
+            //
+            background-image: url(../img/slide-3-320.jpg);
+        }
+    }
+}

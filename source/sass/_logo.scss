@@ -1,0 +1,94 @@
+.logo {
+    //positioning
+    position: relative;
+
+    // block model
+    padding: 10px;
+    padding-bottom: 6px;
+
+    // visual
+    background-color: rgba(4, 4, 4, .5);
+    transition: all .5s linear;
+
+    &__image {
+        // block model
+        float: left;
+        width: 40px;
+
+        // visual
+        fill: #f1f1f1;
+    }
+
+    &__text {
+        // block model
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+
+        // typography
+        color: #f1f1f1;
+        font-family: "Playfair Display SC", serif;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 48px;
+    }
+
+    &__author {
+        // block model
+        display: none;
+        padding-left: 50px;
+
+        // typography
+        color: #f1f1f1;
+        font-family: "Playfair Display SC", serif;
+        font-size: 14px;
+    }
+
+    &::after {
+        content: "";
+
+        // block model
+        display: table;
+        height: 0;
+        background: red;
+        clear: both;
+    }
+
+    &--menu-shown {
+        //visual
+        background-color: #f1f1f1;
+
+        & .logo {
+            &__image {
+                // visual
+                fill: #000000;
+            }
+
+            &__text {
+                // typography
+                color: #000000;
+            }
+        }
+
+        & .menu-button {
+            // block model
+            // display: none;
+            fill: #000000;
+        }
+    }
+}
+
+
+.menu-button {
+    // positioning
+    position: absolute;
+    right: 10px;
+    top: 30px;
+
+    // block model
+    width: 24px;
+
+    // visual
+    cursor: pointer;
+    fill: #f1f1f1;
+}

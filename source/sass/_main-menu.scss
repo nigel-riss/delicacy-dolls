@@ -1,0 +1,56 @@
+.main-menu {
+    // block model
+    //display: none;
+    margin-top: -300px;
+
+    // visual
+    opacity: 0;
+    transition: all .5s linear;
+
+    &__list {
+        // block model
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+
+        // visual
+        list-style: none;
+        background-color: $backColorMain;
+    }
+
+    &__item {
+        // block model
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item-link {
+        // block model
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+        padding-left: 60px;
+
+        // typography
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        line-height: 20px;
+        text-decoration: none;
+        //text-transform: uppercase;
+
+        // visual
+        background-color: $backColorMain;
+    }
+
+    &--shown {
+        // block model
+        // display: block;
+        margin-top: 0;
+
+        // visual
+        opacity: 1;
+    }
+}
