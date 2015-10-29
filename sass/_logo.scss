@@ -27,7 +27,7 @@
 
         // typography
         color: #f1f1f1;
-        font-family: "Playfair Display SC", serif;
+        font-family: $fontSerifCaption;
         font-weight: normal;
         font-size: 22px;
         line-height: 48px;
@@ -57,6 +57,7 @@
     &--menu-shown {
         //visual
         background-color: #f1f1f1;
+        background-color: rgba(241, 241, 241, .9);
 
         & .logo {
             &__image {

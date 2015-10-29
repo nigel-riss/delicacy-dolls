@@ -1,0 +1,50 @@
+.social {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    // block model
+    width: 100%;
+    padding: 10px 0;
+
+    // visual
+    background-color: rgba(4, 4, 4, .5);
+
+    &__list {
+        // block model
+        margin: 0 auto;
+        width: 120px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        //
+    }
+
+    &__item-link {
+        // typography
+        color: #f1f1f1;
+
+        &:hover {
+            // typography
+            color: #040404;
+
+            // visual
+            background-color: #f1f1f1;
+        }
+    }
+
+    &--footer {
+        // positioning
+        position: relative;
+
+        // block model
+        padding-top: 50px;
+    }
+}

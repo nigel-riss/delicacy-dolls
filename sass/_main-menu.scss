@@ -1,11 +1,13 @@
 .main-menu {
     // block model
     //display: none;
-    margin-top: -300px;
+    //margin-top: -300px;
+    height: 0;
+    overflow: hidden;
 
     // visual
     opacity: 0;
-    transition: all .5s linear;
+    transition: all .5s ease-out;
 
     &__list {
         // block model
@@ -16,6 +18,7 @@
         // visual
         list-style: none;
         background-color: $backColorMain;
+        background-color: rgba(241, 241, 241, .9);
     }
 
     &__item {
@@ -42,13 +45,15 @@
         //text-transform: uppercase;
 
         // visual
-        background-color: $backColorMain;
+        //background-color: $backColorMain;
+        //background-color: rgba(241, 241, 241, .9);
     }
 
     &--shown {
         // block model
         // display: block;
-        margin-top: 0;
+        // margin-top: 0;
+        height: 200px;
 
         // visual
         opacity: 1;
