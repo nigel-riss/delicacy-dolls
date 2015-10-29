@@ -1,0 +1,38 @@
+.about {
+    //
+}
+
+.about-dolls {
+    // block model
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
+
+    // visual
+    background-color: #f1f1f1;
+
+    &__image {
+        // block model
+        width: 100%;
+    }
+
+    &__caption {
+        // block model
+        padding-bottom: 20px;
+
+        // typography
+        font-family: $fontSerifCaption;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    &__text {
+        // block model
+        padding: 0 20px;
+
+        // typography
+        //font-family: "Georgia";
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
