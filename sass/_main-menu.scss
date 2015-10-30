@@ -9,6 +9,19 @@
     opacity: 0;
     transition: all .5s ease-out;
 
+    @media (min-width: $tablet) {
+        // positioning
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        // block model
+        height: auto;
+
+        // visual
+        opacity: 1;
+    }
+
     &__list {
         // block model
         margin: 0;
@@ -19,15 +32,34 @@
         list-style: none;
         background-color: $backColorMain;
         background-color: rgba(241, 241, 241, .9);
+
+        @media (min-width: $tablet) {
+            // block model
+            padding-bottom: 0;
+            padding-right: 10px;
+
+            // visual
+            background-color: transparent;
+        }
     }
 
     &__item {
         // block model
         margin: 0;
         padding: 0;
+
+        @media (min-width: $tablet) {
+            // block model
+            display: inline-block;
+            padding: 0 10px;
+            padding-left: 30px;
+        }
     }
 
     &__item-link {
+        // positioning
+        position: relative;
+
         // block model
         box-sizing: border-box;
         display: block;
@@ -36,7 +68,7 @@
 
         // typography
         color: #000000;
-        font-family: "Open Sans";
+        font-family: "Open Sans", sans-serif;
         font-size: 16px;
         font-weight: bold;
         letter-spacing: 1.2px;
@@ -47,6 +79,48 @@
         // visual
         //background-color: $backColorMain;
         //background-color: rgba(241, 241, 241, .9);
+        //transition: all .3s linear;
+
+        @media (min-width: $tablet) {
+            // block model
+            padding: 25px 0;
+
+            // typography
+            color: #f1f1f1;
+            font-weight: lighter;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        &:active,
+        &:hover {
+            // typography
+            color: #f1f1f1;
+
+            // visual
+            background-color: rgba(0, 0, 0, .9);
+
+            @media (min-width: $tablet) {
+                // visual
+                background-color: transparent;
+            }
+        }
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+
+            // block model
+            display: block;
+            height: 1px;
+            width: 100%;
+
+            // visual 
+            background-color: #f1f1f1;
+            opacity: .5;
+        }
     }
 
     &--shown {

@@ -3,7 +3,7 @@
     position: relative;
 
     // block model
-    padding: 10px;
+    padding: 10px 20px;
     padding-bottom: 6px;
 
     // visual
@@ -83,7 +83,7 @@
 .menu-button {
     // positioning
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 30px;
 
     // block model
@@ -92,4 +92,9 @@
     // visual
     cursor: pointer;
     fill: #f1f1f1;
+
+    @media (min-width: $tablet) {
+        // block model
+        display: none;
+    }
 }
