@@ -6,9 +6,8 @@
     padding: 10px 20px;
     padding-bottom: 6px;
 
-    // visual
-    background-color: rgba(4, 4, 4, .5);
-    transition: all .5s linear;
+    // typography
+    font-size: 0;
 
     &__image {
         // block model
@@ -55,10 +54,6 @@
     }
 
     &--menu-shown {
-        //visual
-        background-color: #f1f1f1;
-        background-color: rgba(241, 241, 241, .9);
-
         & .logo {
             &__image {
                 // visual
