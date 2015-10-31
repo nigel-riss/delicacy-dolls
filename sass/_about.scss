@@ -22,8 +22,14 @@
 
         // typography
         font-family: $fontSerifCaption;
+        font-size: 22px;
         font-weight: normal;
         text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 28px;
+        }
     }
 
     &__text {
