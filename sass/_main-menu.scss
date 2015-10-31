@@ -26,12 +26,10 @@
         // block model
         margin: 0;
         padding: 0;
-        padding-bottom: 20px;
+        //padding-bottom: 20px;
 
         // visual
         list-style: none;
-        background-color: $backColorMain;
-        background-color: rgba(241, 241, 241, .9);
 
         @media (min-width: $tablet) {
             // block model
@@ -79,7 +77,6 @@
         // visual
         //background-color: $backColorMain;
         //background-color: rgba(241, 241, 241, .9);
-        //transition: all .3s linear;
 
         @media (min-width: $tablet) {
             // block model
@@ -104,6 +101,14 @@
                 // visual
                 background-color: transparent;
             }
+
+            &::after {
+                // visual
+                opacity: .5;
+
+                // transformation
+                transform: translateY(5px);
+            }
         }
 
         &::after {
@@ -113,13 +118,22 @@
             position: absolute;
 
             // block model
-            display: block;
+            display: none;
             height: 1px;
             width: 100%;
 
             // visual 
             background-color: #f1f1f1;
-            opacity: .5;
+            opacity: 0;
+
+            // transformation
+            transform: translateY(20px);
+            transition: all .2s linear;
+
+            @media (min-width: $tablet) {
+                // block model
+                display: block;
+            }
         }
     }
 
@@ -127,7 +141,8 @@
         // block model
         // display: block;
         // margin-top: 0;
-        height: 200px;
+        height: 120px;
+        padding-bottom: 20px;
 
         // visual
         opacity: 1;

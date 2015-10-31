@@ -8,36 +8,46 @@
 
     &__caption {
         // block model
-        padding-bottom: 50px;
+        //padding-bottom: 50px;
 
         // typography
         color: #f1f1f1;
         font-family: $fontSerifCaption;
+        font-size: 22px;
         font-weight: normal;
         text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 28px;
+        }
     }
 
     &__text {
         // block model
         padding: 0 20px;
+        padding-top: 40px;
+        margin: 0;
 
         // typography
         color: #f1f1f1;
+        font-size: 16px;
         line-height: 1.4;
+        text-align: center;
     }
 
     &__link {
         // block model
-        padding: 5px 0;
+        //padding: 5px 0;
 
         // typography
-        color: #040404;
-        //        color: #f1f1f1;
+        //color: #040404;
+        color: #f1f1f1;
         text-decoration: none;
 
         // visual
         border-bottom: 1px dashed #f1f1f1;
-        background-color: #f1f1f1;
+        //background-color: #f1f1f1;
     }
 
     &__info-block {
@@ -52,5 +62,12 @@
         line-height: 20px;
 
         // visual
+    }
+
+    @media (min-width: $tablet) {
+        // visual
+        background-image: url(../img/contacts-back.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
     }
 }
