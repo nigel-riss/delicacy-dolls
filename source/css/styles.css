@@ -695,7 +695,7 @@ body {
 .main-menu__item-link:active,
 .main-menu__item-link:hover {
     color: #f1f1f1;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(255, 0, 0, .9);
 }
 @media (min-width: 768px) {
     .main-menu__item-link:active,
