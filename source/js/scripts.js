@@ -36,8 +36,20 @@ window.onresize = onResize;*/
     var hero = document.querySelector(".hero");
 
     //HERO HEIGHT
-    var maxHeight = 1080;
-    //hero.style.height = Math.min(maxHeight, (window.innerHeight)) - 50 + "px";
+    var winWidth = (window.outerWidth > 0) ? window.innerWidth : screen.width;
+    
+    var maxHeight = 480;
+    if (winWidth < 768) {
+        maxHeight = 480;
+    } else if (winWidth < 1000) {
+        maxHeight = 512;
+    } else {
+        maxHeight = 1080;
+    }
+    
+    hero.style.height = Math.min(maxHeight, (window.innerHeight)) + "px";
+    //alert(window.outerWidth);
+    //hero.style.height = window.innerHeight - 50 + "px";
 
     //*/
 
