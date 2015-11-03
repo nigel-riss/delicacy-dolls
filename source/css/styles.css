@@ -583,6 +583,11 @@ body {
     width: 40px;
     fill: #f1f1f1;
 }
+@media (min-width: 768px) {
+    .logo__image {
+        width: 50px;
+    }
+}
 @media (min-width: 1000px) {
     .logo__image {
         width: 60px;
@@ -598,10 +603,18 @@ body {
     font-size: 18px;
     line-height: 48px;
 }
+@media (min-width: 768px) {
+    .logo__text {
+        padding-left: 60px;
+        font-size: 26px;
+        line-height: 64px;
+    }
+}
 @media (min-width: 1000px) {
     .logo__text {
         padding-left: 70px;
         font-size: 32px;
+        line-height: 48px;
     }
 }
 .logo__author {
@@ -704,10 +717,10 @@ body {
 }
 @media (min-width: 768px) {
     .main-menu__item-link {
-        padding: 25px 0;
+        padding: 32px 0;
         color: #f1f1f1;
         font-weight: lighter;
-        font-size: 14px;
+        font-size: 15px;
         text-transform: uppercase;
     }
 }

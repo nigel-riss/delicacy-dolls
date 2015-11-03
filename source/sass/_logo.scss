@@ -17,6 +17,11 @@
         // visual
         fill: #f1f1f1;
 
+        @media (min-width: $tablet) {
+            // block model
+            width: 50px;
+        }
+
         @media (min-width: $desktop) {
             // block model
             width: 60px;
@@ -36,12 +41,22 @@
         font-size: 18px;
         line-height: 48px;
 
+        @media (min-width: $tablet) {
+            // block model
+            padding-left: 60px;
+
+            // typography
+            font-size: 26px;
+            line-height: 64px;
+        }
+
         @media (min-width: $desktop) {
             // block model
             padding-left: 70px;
 
             // typography
             font-size: 32px;
+            line-height: 48px;
         }
     }
 
