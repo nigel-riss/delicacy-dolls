@@ -21,6 +21,11 @@
             // typography
             font-size: 28px;
         }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 32px;
+        }
     }
 
     &__text {
@@ -34,6 +39,15 @@
         font-size: 16px;
         line-height: 1.4;
         text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 18px;
+        }
+        @media (min-width: $desktop ) {
+            // typography
+            font-size: 20px;
+        }
     }
 
     &__link {
@@ -52,13 +66,14 @@
 
     &__info-block {
         // block model
-        padding-bottom: 15px;
-        padding-top: 50px;
+        padding-bottom: 60px;
+        //        padding-left: 10px;
+        padding-top: 60px;
 
         // typography
         color: #f1f1f1;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
 
         // visual

@@ -32,24 +32,33 @@ onResize();
 
 window.onresize = onResize;*/
 
-(function() {
+(function () {
+	"use strict";
+	
     var hero = document.querySelector(".hero");
 
     //HERO HEIGHT
-    var winWidth = (window.outerWidth > 0) ? window.innerWidth : screen.width;
+	function adjustHeroHeight() {
+		var winWidth = (window.outerWidth > 0) ? window.innerWidth : screen.width;
+
+		var maxHeight = 480;
+		if (winWidth < 768) {
+			maxHeight = 480;
+		} else if (winWidth < 1000) {
+			maxHeight = 512;
+		} else {
+			maxHeight = 1080;
+		}
+
+		hero.style.height = Math.min(maxHeight, (window.innerHeight)) + "px";
+	}
+	
+	adjustHeroHeight();
     
-    var maxHeight = 480;
-    if (winWidth < 768) {
-        maxHeight = 480;
-    } else if (winWidth < 1000) {
-        maxHeight = 512;
-    } else {
-        maxHeight = 1080;
-    }
-    
-    hero.style.height = Math.min(maxHeight, (window.innerHeight)) + "px";
-    //alert(window.outerWidth);
-    //hero.style.height = window.innerHeight - 50 + "px";
+	//RESIZE
+	window.onresize = function () {
+		adjustHeroHeight();
+	};
 
     //*/
 
@@ -77,7 +86,7 @@ window.onresize = onResize;*/
     var logo = document.querySelector(".logo");
     var mainMenu = document.querySelector(".main-menu");
     var menuButton = document.querySelector(".menu-button");
-    menuButton.addEventListener("click", function(event) {
+    menuButton.addEventListener("click", function (event) {
         if (logo.classList.contains("logo--menu-shown")) {
 			header.classList.remove("header--menu-shown");
             logo.classList.remove("logo--menu-shown");

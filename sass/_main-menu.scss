@@ -89,13 +89,21 @@
             text-transform: uppercase;
         }
 
+        @media (min-width: $desktop) {
+            // block model
+            padding: 39px 0;
+
+            // typography
+            font-size: 16px;
+        }
+
         &:active,
         &:hover {
             // typography
             color: #f1f1f1;
 
             // visual
-            background-color: rgba(255, 0, 0, .9);
+            background-color: rgba(0, 0, 0, .9);
 
             @media (min-width: $tablet) {
                 // visual
@@ -141,7 +149,7 @@
         // block model
         // display: block;
         // margin-top: 0;
-        height: 120px;
+        height: 150px;
         padding-bottom: 20px;
 
         // visual
