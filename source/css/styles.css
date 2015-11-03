@@ -583,6 +583,11 @@ body {
     width: 40px;
     fill: #f1f1f1;
 }
+@media (min-width: 1000px) {
+    .logo__image {
+        width: 60px;
+    }
+}
 .logo__text {
     margin: 0;
     padding: 0;
@@ -593,12 +598,26 @@ body {
     font-size: 18px;
     line-height: 48px;
 }
+@media (min-width: 1000px) {
+    .logo__text {
+        padding-left: 70px;
+        font-size: 32px;
+    }
+}
 .logo__author {
     display: none;
     padding-left: 50px;
     color: #f1f1f1;
     font-family: "Playfair Display SC", serif;
     font-size: 14px;
+}
+@media (min-width: 1000px) {
+    .logo__author {
+        display: block;
+        padding-left: 70px;
+        font-size: 16px;
+        font-style: italic;
+    }
 }
 .logo::after {
     content: "";
@@ -692,10 +711,16 @@ body {
         text-transform: uppercase;
     }
 }
+@media (min-width: 1000px) {
+    .main-menu__item-link {
+        padding: 39px 0;
+        font-size: 16px;
+    }
+}
 .main-menu__item-link:active,
 .main-menu__item-link:hover {
     color: #f1f1f1;
-    background-color: rgba(255, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .9);
 }
 @media (min-width: 768px) {
     .main-menu__item-link:active,
@@ -725,7 +750,7 @@ body {
     }
 }
 .main-menu--shown {
-    height: 120px;
+    height: 150px;
     padding-bottom: 20px;
     opacity: 1;
 }
@@ -751,6 +776,21 @@ body {
     background-image: url(../img/slide-3-320.jpg);
 }
 
+@media (min-width: 768px) {
+    .hero__slide {
+        background-position: center 0;
+    }
+    .hero__slide--1 {
+        background-image: url(../img/slide-1-1000.jpg);
+    }
+    .hero__slide--2 {
+        background-image: url(../img/slide-2-1000.jpg);
+    }
+    .hero__slide--3 {
+        background-image: url(../img/slide-3-1000.jpg);
+    }
+}
+
 .social {
     position: absolute;
     bottom: 0;
@@ -761,11 +801,13 @@ body {
 }
 .social__list {
     margin: 0 auto;
-    width: 120px;
+    width: 200px;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     list-style: none;
+}
+.social__item {
+    display: inline-block;
 }
 .social__item-link {
     display: inline-block;
@@ -781,6 +823,10 @@ body {
 .social--footer {
     position: relative;
     background-color: transparent;
+}
+
+.about {
+    padding-bottom: 60px;
 }
 
 .about-dolls {
@@ -804,10 +850,25 @@ body {
         font-size: 28px;
     }
 }
+@media (min-width: 1000px) {
+    .about-dolls__caption {
+        font-size: 32px;
+    }
+}
 .about-dolls__text {
     padding: 0 20px;
     font-size: 16px;
     line-height: 1.4;
+}
+@media (min-width: 768px) {
+    .about-dolls__text {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1000px) {
+    .about-dolls__text {
+        font-size: 20px;
+    }
 }
 
 .main-footer {
@@ -827,6 +888,11 @@ body {
         font-size: 28px;
     }
 }
+@media (min-width: 1000px) {
+    .main-footer__caption {
+        font-size: 32px;
+    }
+}
 .main-footer__text {
     padding: 0 20px;
     padding-top: 40px;
@@ -836,17 +902,27 @@ body {
     line-height: 1.4;
     text-align: center;
 }
+@media (min-width: 768px) {
+    .main-footer__text {
+        font-size: 18px;
+    }
+}
+@media (min-width: 1000px) {
+    .main-footer__text {
+        font-size: 20px;
+    }
+}
 .main-footer__link {
     color: #f1f1f1;
     text-decoration: none;
     border-bottom: 1px dashed #f1f1f1;
 }
 .main-footer__info-block {
-    padding-bottom: 15px;
-    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     color: #f1f1f1;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
 }
 @media (min-width: 768px) {

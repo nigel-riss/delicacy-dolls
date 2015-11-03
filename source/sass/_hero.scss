@@ -31,3 +31,27 @@
         }
     }
 }
+
+@media (min-width: $tablet) {
+    .hero {
+        &__slide {
+            // visual
+            background-position: center 0;
+
+            &--1 {
+                // visual
+                background-image: url(../img/slide-1-1000.jpg);
+            }
+
+            &--2 {
+                // visual
+                background-image: url(../img/slide-2-1000.jpg);
+            }
+
+            &--3 {
+                // visual
+                background-image: url(../img/slide-3-1000.jpg);
+            }
+        }
+    }
+}

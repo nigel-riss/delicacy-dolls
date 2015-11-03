@@ -14,17 +14,22 @@
     &__list {
         // block model
         margin: 0 auto;
-        width: 120px;
+        width: 200px;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
+        // not jet for iPad. soz
+        //display: flex;
+        //justify-content: space-between;
+
+        // typography
+        text-align: center;
 
         // visual
         list-style: none;
     }
 
     &__item {
-        //
+        // block model
+        display: inline-block;
     }
 
     &__item-link {
