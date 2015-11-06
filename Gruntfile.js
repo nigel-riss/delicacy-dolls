@@ -23,6 +23,24 @@ module.exports = function (grunt) {
             }
         },
 
+        // livereload: {
+        //     style: {
+
+        //     }
+        // },
+
+        express: {
+            all: {
+                options: {
+                    port: 9000,
+                    hostname: "localhost",
+                    //base: "source/**/*.*",
+                    bases: ["source"],
+                    livereload: true
+                }
+            }
+        },
+
         watch: {
             style: {
                 files: ['source/sass/**/*.scss'],
@@ -37,4 +55,5 @@ module.exports = function (grunt) {
     };
 
     grunt.initConfig(config);
+    grunt.registerTask("server", ["express", "watch"]);
 };

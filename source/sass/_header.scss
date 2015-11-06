@@ -1,4 +1,11 @@
 .header {
+    // positioning
+    position: absolute;
+    z-index: 3;
+
+    // block model
+    width: 100%;
+
     // typography
     font-size: 0;
 
@@ -10,5 +17,19 @@
         //visual
         background-color: #f1f1f1;
         background-color: rgba(241, 241, 241, .9);
+    }
+
+    &:after {
+        content: "";
+
+        // block model
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+
+    &--gallery {
+        // visual
+        background-color: #ffffff;
     }
 }

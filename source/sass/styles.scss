@@ -13,183 +13,28 @@
 @import "social";
 @import "about";
 @import "main-footer";
+@import "gallery";
 
 
 
-.header {
-    // positioning
-    position: absolute;
-    z-index: 1;
-
+.page-name {
     // block model
-    width: 100%;
-}
+    padding-bottom: 0;
 
-//.container {
-//    /* positioning */
-//    position: relative;
-//
-//    /* box model */
-//    font-size: 10px;
-//    margin: 0 auto;
-//    max-width: 1000px;
-//    height: 100%;
-//}
-//
-//
-//.about {
-//    background-color: #f1f1f1;
-//}
-//
-//.about-dolls__image {
-//    width: 100%;
-//}
-//
-//.about-dolls__caption {
-//    /* block model */
-//    margin: 0;
-//    padding-left: 10%;
-//    width: 80%;
-//    padding-bottom: 40px;
-//
-//    /* typography */
-//    color: #000000;
-//    font-family: "Playfair Display SC", serif;
-//    font-weight: normal;
-//    font-size: 38px;
-//    font-size: 380%;
-//    line-height: 60px;
-//    text-align: center;
-//}
-//
-//.about-dolls__text {
-//    /*block model*/
-//    padding-left: 10%;
-//    width: 80%;
-//    padding-bottom: 0;
-//    margin-bottom: 0;
-//
-//    /* typography */
-//    font-family: "Roboto";
-//    font-weight: 300;
-//    color: #000000;
-//    font-size: 16px;
-//    line-height: 1.44;
-//}
-//
-//.about-dolls__text:last-of-type {
-//    padding-bottom: 80px;
-//}
-//
-//.main-footer {
-//    /* positioning */
-//    position: relative;
-//
-//    /* box model */
-//    height: 700px;
-//
-//    /* visual */
-//    background-image: url(../img/contacts-back.jpg);
-//    background-repeat: no-repeat;
-//    background-position: bottom right;
-//}
-//
-//.main-footer h2 {
-//    /* box model */
-//    margin: 0;
-//    padding: 80px 0;
-//    padding-bottom: 40px;
-//    padding-left: 100px;
-//
-//    /* typography */
-//    color: #ffffff;
-//    font-family: "Playfair Display SC", serif;
-//    font-weight: normal;
-//    font-size: 38px;
-//    line-height: 60px;
-//}
-//
-//.main-footer p {
-//    margin-bottom: 40px;
-//    padding-left: 100px;
-//    width: 800px;
-//    font-size: 16px;
-//    line-height: 1.7;
-//    font-family: "Roboto";
-//    font-weight: 300;
-//}
-//
-//.main-footer a {
-//    /* box model */
-//    padding: 5px;
-//    box-sizing: border-box;
-//    border-bottom: 1px dotted #cccccc;
-//
-//    /* typography */
-//    color: #ffffff;
-//    text-decoration: none;
-//    transition: all linear .3s;
-//}
-//
-//.main-footer a:hover {
-//    color: #040404;
-//    background-color: #ffffff;
-//}
-//
-//.main-footer ul {
-//    /* box model */
-//    margin: 0;
-//    padding: 0;
-//    list-style: none;
-//}
-//
-//.info-block {
-//    position: absolute;
-//    bottom: 20px;
-//    padding-left: 100px;
-//}
-//
-//.social {
-//    display: none;
-//    /* positioning */
-//    position: absolute;
-//    bottom: 35px;
-//}
-//
-//.social ul {
-//    /* box model */
-//    padding: 0;
-//    margin: 0;
-//
-//    /* other */
-//    list-style: none;
-//}
-//
-//.social li {
-//    /* box model */
-//    display: inline-block;
-//    padding: 0 5px;
-//    margin: 0;
-//}
-//
-//.social a {
-//    /* box model */
-//    display: inline-block;
-//    padding: 3px;
-//    margin: 0;
-//
-//    /* typography */
-//    color: #d4d4d4;;
-//    font-family: "fontello";
-//
-//    /* visual */
-//    transition: all .3s ease;
-//}
-//
-//.social a:hover {
-//    /* visual */
-//    background-color: #ffffff;
-//
-//    /* typography */
-//    color: #000000;
-//}
+    // typography
+    color: #f1f1f1;
+    font-family: $fontSerifCaption;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        // typography
+        font-size: 28px;
+    }
+
+    @media (min-width: $desktop) {
+        // typography
+        font-size: 32px;
+    }
+}

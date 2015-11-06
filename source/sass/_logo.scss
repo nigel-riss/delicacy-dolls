@@ -3,6 +3,7 @@
     position: relative;
 
     // block model
+    clear: both;
     padding: 10px 20px;
     padding-bottom: 6px;
 
@@ -110,6 +111,25 @@
             fill: #000000;
         }
     }
+
+    &--gallery {
+        & .logo {
+            &__image {
+                // visual
+                fill: #000000;
+            }
+
+            &__text {
+                // typography
+                color: #000000;
+            }
+
+            &__author {
+                // typography
+                color: #000000;
+            }
+        }
+    }
 }
 
 
@@ -125,6 +145,11 @@
     // visual
     cursor: pointer;
     fill: #f1f1f1;
+
+    &--gallery {
+        // visual
+        fill: #000000;
+    }
 
     @media (min-width: $tablet) {
         // block model
