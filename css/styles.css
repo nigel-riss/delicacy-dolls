@@ -563,6 +563,9 @@ body {
 }
 
 .header {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
     font-size: 0;
     background-color: rgba(4, 4, 4, .5);
     transition: all .5s linear;
@@ -571,9 +574,19 @@ body {
     background-color: #f1f1f1;
     background-color: rgba(241, 241, 241, .9);
 }
+.header:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+.header--gallery {
+    background-color: #ffffff;
+}
 
 .logo {
     position: relative;
+    clear: both;
     padding: 10px 20px;
     padding-bottom: 6px;
     font-size: 0;
@@ -648,6 +661,15 @@ body {
 .logo--menu-shown .menu-button {
     fill: #000000;
 }
+.logo--gallery .logo__image {
+    fill: #000000;
+}
+.logo--gallery .logo__text {
+    color: #000000;
+}
+.logo--gallery .logo__author {
+    color: #000000;
+}
 
 .menu-button {
     position: absolute;
@@ -656,6 +678,9 @@ body {
     width: 24px;
     cursor: pointer;
     fill: #f1f1f1;
+}
+.menu-button--gallery {
+    fill: #000000;
 }
 @media (min-width: 768px) {
     .menu-button {
@@ -699,6 +724,29 @@ body {
         display: inline-block;
         padding: 0 10px;
         padding-left: 30px;
+    }
+}
+.main-menu__item-current {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    padding-left: 70px;
+    color: #e74c3c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .main-menu__item-current {
+        padding: 5px 0;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 2px solid #000000;
     }
 }
 .main-menu__item-link {
@@ -766,6 +814,27 @@ body {
     height: 150px;
     padding-bottom: 20px;
     opacity: 1;
+}
+.main-menu--gallery .main-menu__item-link {
+    color: #000000;
+}
+.main-menu--gallery .main-menu__item-link:active,
+.main-menu--gallery .main-menu__item-link:hover {
+    color: #f1f1f1;
+}
+@media (min-width: 768px) {
+    .main-menu--gallery .main-menu__item-link:active,
+    .main-menu--gallery .main-menu__item-link:hover {
+        color: #000000;
+    }
+}
+.main-menu--gallery .main-menu__item-link::after {
+    background-color: #000000;
+}
+@media (min-width: 768px) {
+    .main-menu--gallery .main-menu__item-link {
+        font-weight: normal;
+    }
 }
 
 .hero {
@@ -946,8 +1015,29 @@ body {
     }
 }
 
-.header {
-    position: absolute;
-    z-index: 1;
+.gallery {
+    padding-top: 100px;
     width: 100%;
+    margin: 0;
+    min-height: 1000px;
+    background-color: #040404;
+}
+
+.page-name {
+    padding-bottom: 0;
+    color: #f1f1f1;
+    font-family: "Playfair Display SC", serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .page-name {
+        font-size: 28px;
+    }
+}
+@media (min-width: 1000px) {
+    .page-name {
+        font-size: 32px;
+    }
 }
