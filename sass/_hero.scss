@@ -43,6 +43,30 @@
 
             &--1 {
                 // visual
+                background-image: url(../img/slide-1-768.jpg);
+            }
+
+            &--2 {
+                // visual
+                background-image: url(../img/slide-2-768.jpg);
+            }
+
+            &--3 {
+                // visual
+                background-image: url(../img/slide-3-768.jpg);
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .hero {
+        &__slide {
+            // visual
+            background-position: center 0;
+
+            &--1 {
+                // visual
                 background-image: url(../img/slide-1-1000.jpg);
             }
 
