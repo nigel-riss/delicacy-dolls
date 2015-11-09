@@ -2,7 +2,7 @@
 // jshint plusplus: false 
 
 
-(function () {
+;(function () {
     "use strict";
 
     //////////////////////
@@ -38,18 +38,6 @@
 
 
 
-    //SLIDER
-    //var slideIterator = 1;
-    //
-    //function changeSlide() {
-    //    hero.classList.remove("hero--slide-" + slideIterator);
-    //    (slideIterator === 3) ? slideIterator = 1 : slideIterator++;
-    //    hero.classList.add("hero--slide-" + slideIterator);
-    //}
-
-    //setInterval(changeSlide, 5000);
-
-
     //////////////////////
     // PARALAX
     //////////////////////
@@ -63,6 +51,54 @@
         }
     };
 
+
+
+    //////////////////////
+    // SLIDER
+    //////////////////////
+
+    var currentSlideID = 2;
+    var currentSlideOpacity = 1;
+    var nextSlideID = 0;
+    var nextSlideOpacity = 0;
+    var numberOfSlides = 3;
+    var opacityStep = 0.01;
+    var slideDelay = 5;
+    var slideDelayCounter = 100;
+    //function changeSlide() {
+    //    hero.classList.remove("hero--slide-" + slideIterator);
+    //    (slideIterator === 3) ? slideIterator = 1 : slideIterator++;
+    //    hero.classList.add("hero--slide-" + slideIterator);
+    //}
+
+    function changeSlide() {
+        if (slideDelayCounter <= 0) {
+            for (i = 0; i < numberOfSlides; i++) {
+                heroSlides[i].style.opacity = 0;
+            }
+            currentSlideOpacity -= opacityStep;
+            nextSlideOpacity += opacityStep;
+            heroSlides[currentSlideID].style.opacity = currentSlideOpacity;
+            heroSlides[nextSlideID].style.opacity = nextSlideOpacity;
+
+            if (currentSlideOpacity <= 0) {
+                currentSlideID++;
+                nextSlideID++;
+                if (currentSlideID == numberOfSlides) {
+                    currentSlideID = 0;
+                }
+                if (nextSlideID == numberOfSlides) {
+                    nextSlideID = 0;
+                }
+                currentSlideOpacity = 1;
+                nextSlideOpacity = 0;
+                slideDelayCounter = slideDelay * 34;
+            }
+        }
+        slideDelayCounter--;
+    }
+
+    setInterval(changeSlide, 30);
 
 
     //////////////////////
@@ -119,4 +155,4 @@
             }
         }, 10);
     }
-})();
+}());
