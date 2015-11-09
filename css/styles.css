@@ -1254,6 +1254,10 @@ body {
     background-color: #040404;
 }
 
+a {
+    text-decoration: none;
+}
+
 .page-name {
     padding-bottom: 0;
     color: #f1f1f1;
