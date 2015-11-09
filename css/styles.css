@@ -1054,6 +1054,7 @@ body {
 .hero {
     position: relative;
     height: 600px;
+    background-color: #040404;
 }
 .hero__slide {
     position: absolute;
