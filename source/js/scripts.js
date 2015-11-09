@@ -17,7 +17,7 @@
         if (winWidth < 768) {
             maxHeight = 480;
         } else if (winWidth < 1000) {
-            maxHeight = 512;
+            maxHeight = 768;
         } else {
             maxHeight = 1080;
         }

@@ -1078,6 +1078,21 @@ body {
         background-position: center 0;
     }
     .hero__slide--1 {
+        background-image: url(../img/slide-1-768.jpg);
+    }
+    .hero__slide--2 {
+        background-image: url(../img/slide-2-768.jpg);
+    }
+    .hero__slide--3 {
+        background-image: url(../img/slide-3-768.jpg);
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero__slide {
+        background-position: center 0;
+    }
+    .hero__slide--1 {
         background-image: url(../img/slide-1-1000.jpg);
     }
     .hero__slide--2 {
