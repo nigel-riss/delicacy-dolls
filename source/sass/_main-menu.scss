@@ -1,7 +1,5 @@
 .main-menu {
     // block model
-    //display: none;
-    //margin-top: -300px;
     height: 0;
     overflow: hidden;
 
@@ -198,8 +196,6 @@
 
     &--shown {
         // block model
-        // display: block;
-        // margin-top: 0;
         height: 150px;
         padding-bottom: 20px;
 
