@@ -1,5 +1,5 @@
 .main-menu {
-    // block model
+    // box model  
     height: 0;
     overflow: hidden;
 
@@ -13,7 +13,7 @@
         top: 0;
         right: 0;
 
-        // block model
+        // box model 
         height: auto;
 
         // visual
@@ -21,7 +21,7 @@
     }
 
     &__list {
-        // block model
+        // box model  
         margin: 0;
         padding: 0;
         //padding-bottom: 20px;
@@ -30,7 +30,7 @@
         list-style: none;
 
         @media (min-width: $tablet) {
-            // block model
+            // box model    
             padding-bottom: 0;
             padding-right: 10px;
 
@@ -40,12 +40,12 @@
     }
 
     &__item {
-        // block model
+        // box model      
         margin: 0;
         padding: 0;
 
         @media (min-width: $tablet) {
-            // block model
+            // box model     
             display: inline-block;
             padding: 0 10px;
             padding-left: 30px;
@@ -56,7 +56,7 @@
         // positioning
         position: relative;
 
-        // block model
+        // box model     
         box-sizing: border-box;
         display: block;
         padding: 10px;
@@ -79,7 +79,7 @@
         //     left: 30px;
         //     top: 5px;
 
-        //     // block model
+        //     // box model     
         //     display: block;
         //     height: 30px;
         //     width: 3px;
@@ -107,7 +107,7 @@
         // positioning
         position: relative;
 
-        // block model
+        // box model     
         box-sizing: border-box;
         display: block;
         padding: 10px;
@@ -128,7 +128,7 @@
         //background-color: rgba(241, 241, 241, .9);
 
         @media (min-width: $tablet) {
-            // block model
+            // box model       
             padding: 32px 0;
 
             // typography
@@ -139,7 +139,7 @@
         }
 
         @media (min-width: $desktop) {
-            // block model
+            // box model       
             padding: 39px 0;
 
             // typography
@@ -174,7 +174,7 @@
             // positioning
             position: absolute;
 
-            // block model
+            // box model        
             display: none;
             height: 1px;
             width: 100%;
@@ -188,14 +188,14 @@
             transition: all .2s linear;
 
             @media (min-width: $tablet) {
-                // block model
+                // box model           
                 display: block;
             }
         }
     }
 
     &--shown {
-        // block model
+        // box model  
         height: 150px;
         padding-bottom: 20px;
 

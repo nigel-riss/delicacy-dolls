@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
 
-    // block model
+    // box model   
     width: 100%;
     padding: 10px 0;
 
@@ -13,11 +13,11 @@
     background-color: rgba(4, 4, 4, .5);
 
     &__list {
-        // block model
+        // box model 
         margin: 0 auto;
         width: 200px;
         padding: 0;
-        // not jet for iPad. soz
+        // not yet for iPad. soz
         //display: flex;
         //justify-content: space-between;
 
@@ -29,12 +29,12 @@
     }
 
     &__item {
-        // block model
+        // box model      
         display: inline-block;
     }
 
     &__item-link {
-        // block model
+        // box model    
         display: inline-block;
         vertical-align: top;
         padding: 5px;
@@ -55,7 +55,7 @@
         // positioning
         position: relative;
 
-        // block model
+        // box model      
         //padding-top: 10px;
         //padding: 0;
 

@@ -2,7 +2,7 @@
     //positioning
     position: relative;
 
-    // block model
+    // box model  
     clear: both;
     padding: 10px 20px;
     padding-bottom: 6px;
@@ -11,7 +11,7 @@
     font-size: 0;
 
     &__image {
-        // block model
+        // box model  
         float: left;
         width: 40px;
 
@@ -19,18 +19,18 @@
         fill: #f1f1f1;
 
         @media (min-width: $tablet) {
-            // block model
+            // box model   
             width: 50px;
         }
 
         @media (min-width: $desktop) {
-            // block model
+            // box model  
             width: 60px;
         }
     }
 
     &__text {
-        // block model
+        // box model    
         margin: 0;
         padding: 0;
         padding-left: 50px;
@@ -43,7 +43,7 @@
         line-height: 48px;
 
         @media (min-width: $tablet) {
-            // block model
+            // box model       
             padding-left: 60px;
 
             // typography
@@ -52,7 +52,7 @@
         }
 
         @media (min-width: $desktop) {
-            // block model
+            // box model      
             padding-left: 70px;
 
             // typography
@@ -62,7 +62,7 @@
     }
 
     &__author {
-        // block model
+        // box model   
         display: none;
         padding-left: 50px;
 
@@ -72,7 +72,7 @@
         font-size: 14px;
 
         @media (min-width: $desktop) {
-            // block model
+            // box model   
             display: block;
             padding-left: 70px;
 
@@ -85,7 +85,7 @@
     &::after {
         content: "";
 
-        // block model
+        // box model    
         display: table;
         height: 0;
         background: red;
@@ -106,7 +106,7 @@
         }
 
         & .menu-button {
-            // block model
+            // box model       
             // display: none;
             fill: #000000;
         }
@@ -139,7 +139,7 @@
     right: 20px;
     top: 30px;
 
-    // block model
+    // box model   
     width: 24px;
 
     // visual
@@ -152,7 +152,7 @@
     }
 
     @media (min-width: $tablet) {
-        // block model
+        // box model   
         display: none;
     }
 }
