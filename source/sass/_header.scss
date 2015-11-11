@@ -3,7 +3,7 @@
     position: absolute;
     z-index: 3;
 
-    // block model
+    // box model
     width: 100%;
 
     // typography
@@ -22,7 +22,7 @@
     &:after {
         content: "";
 
-        // block model
+        // box model
         display: table;
         width: 100%;
         clear: both;
