@@ -1089,6 +1089,12 @@ body {
     .hero__news b {
         font-weight: 500;
     }
+    .hero__link {
+        color: #ffffff;
+    }
+    .hero__link:hover {
+        border-bottom: 1px dashed #ffffff;
+    }
     .hero__slide {
         background-position: center 0;
     }
