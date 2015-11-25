@@ -27,12 +27,13 @@
 }
 
 /* cyrillic-ext */
+/* latin */
 @font-face {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 /* cyrillic */
@@ -44,22 +45,13 @@
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
-/* latin-ext */
+/* cyrillic */
 @font-face {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 300;
-    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
-    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-weight: 500;
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* cyrillic-ext */
@@ -814,12 +806,12 @@ body {
 }
 @media (min-width: 768px) {
     .logo__image {
-        width: 50px;
+        width: 40px;
     }
 }
 @media (min-width: 1000px) {
     .logo__image {
-        width: 60px;
+        width: 50px;
     }
 }
 .logo__text {
@@ -830,20 +822,20 @@ body {
     font-family: "Playfair Display SC", serif;
     font-weight: normal;
     font-size: 18px;
-    line-height: 48px;
+    line-height: 50px;
 }
 @media (min-width: 768px) {
     .logo__text {
-        padding-left: 60px;
-        font-size: 26px;
-        line-height: 64px;
+        padding-left: 50px;
+        font-size: 22px;
+        line-height: 50px;
     }
 }
 @media (min-width: 1000px) {
     .logo__text {
-        padding-left: 70px;
+        padding-left: 60px;
         font-size: 32px;
-        line-height: 48px;
+        line-height: 38px;
     }
 }
 .logo__author {
@@ -856,9 +848,8 @@ body {
 @media (min-width: 1000px) {
     .logo__author {
         display: block;
-        padding-left: 70px;
+        padding-left: 60px;
         font-size: 16px;
-        font-style: italic;
     }
 }
 .logo::after {
@@ -939,7 +930,7 @@ body {
     .main-menu__item {
         display: inline-block;
         padding: 0 10px;
-        padding-left: 30px;
+        padding-left: 25px;
     }
 }
 .main-menu__item-current {
@@ -949,19 +940,19 @@ body {
     padding: 10px;
     padding-left: 70px;
     color: #e74c3c;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 20px;
     text-decoration: none;
 }
 @media (min-width: 768px) {
     .main-menu__item-current {
         padding: 5px 0;
-        font-size: 15px;
-        font-weight: normal;
+        font-size: 14px;
+        font-weight: 300;
         text-transform: uppercase;
-        border-bottom: 2px solid #000000;
+        border-bottom: 1px solid #e74c3c;
     }
 }
 .main-menu__item-link {
@@ -971,25 +962,24 @@ body {
     padding: 10px;
     padding-left: 70px;
     color: #000000;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 20px;
-    text-decoration: none;
 }
 @media (min-width: 768px) {
     .main-menu__item-link {
-        padding: 32px 0;
+        padding: 26px 0;
         color: #f1f1f1;
-        font-weight: normal;
+        font-weight: 100;
         font-size: 14px;
         text-transform: uppercase;
     }
 }
 @media (min-width: 1000px) {
     .main-menu__item-link {
-        padding: 39px 0;
-        font-size: 15px;
+        padding: 32px 0;
+        font-size: 14px;
     }
 }
 .main-menu__item-link:active,
@@ -1047,13 +1037,14 @@ body {
 }
 @media (min-width: 768px) {
     .main-menu--gallery .main-menu__item-link {
-        font-weight: normal;
+        font-weight: 300;
     }
 }
 
 .hero {
     position: relative;
     height: 600px;
+    margin: 0;
     background-color: #040404;
 }
 .hero__slide {
@@ -1074,6 +1065,30 @@ body {
 }
 
 @media (min-width: 768px) {
+    .hero__news {
+        position: absolute;
+        bottom: 90px;
+        z-index: 9999;
+        width: 100%;
+        color: rgba(255, 255, 255, .7);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .hero__news .container {
+        padding-left: 20px;
+        color: rgba(255, 255, 255, .7);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .hero__news span {
+        padding: 2px 10px;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    .hero__news b {
+        font-weight: 500;
+    }
     .hero__slide {
         background-position: center 0;
     }
@@ -1100,6 +1115,82 @@ body {
     }
     .hero__slide--3 {
         background-image: url(../img/slide-3-1000.jpg);
+    }
+}
+
+.about-me {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+}
+.about-me::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.about-me__plate {
+    width: 100%;
+    float: right;
+    padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .about-me__plate {
+        width: 500px;
+        margin-right: 20px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+.about-me__caption {
+    padding-bottom: 20px;
+    color: #000000;
+    font-family: "Playfair Display SC", serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .about-me__caption {
+        color: #ffffff;
+        font-size: 28px;
+    }
+}
+@media (min-width: 1000px) {
+    .about-me__caption {
+        font-size: 32px;
+    }
+}
+.about-me__text {
+    padding: 0 20px;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+}
+@media (min-width: 768px) {
+    .about-me__text {
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
+@media (min-width: 1000px) {
+    .about-me__text {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) {
+    .about-me {
+        height: 600px;
+        padding-top: 120px;
+        background-image: url(../img/about-me-background.jpg);
+        background-position: center center;
+    }
+}
+@media (min-width: 1000px) {
+    .about-me {
+        height: 900px;
+        padding-top: 230px;
     }
 }
 
@@ -1170,17 +1261,18 @@ body {
 .about-dolls__text {
     padding: 0 20px;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 14px;
     line-height: 1.4;
 }
 @media (min-width: 768px) {
     .about-dolls__text {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (min-width: 1000px) {
     .about-dolls__text {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -1211,18 +1303,19 @@ body {
     padding-top: 40px;
     margin: 0;
     color: #f1f1f1;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 1.4;
     text-align: center;
 }
 @media (min-width: 768px) {
     .main-footer__text {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 @media (min-width: 1000px) {
     .main-footer__text {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 .main-footer__link {

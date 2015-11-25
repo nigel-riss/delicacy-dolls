@@ -1,0 +1,106 @@
+.about-me {
+    // box model
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    // border: 2px solid red;
+    // clear: both;
+
+    // visual
+    //background-color: #000000;
+
+
+    & .container {
+        // box model
+        // border: 2px solid red;
+        // clear: both;
+
+        // visual
+        //background-color: #000000;
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    &__plate {
+        // box model
+        width: 100%;
+        float: right;
+        padding-bottom: 20px;
+
+        @media (min-width: $tablet) {
+            // box model
+            width: 500px;
+            margin-right: 20px;
+
+            // visual
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+
+    &__caption {
+        // box model
+        padding-bottom: 20px;
+
+        // typography
+        color: #000000;
+        font-family: $fontSerifCaption;
+        font-size: 22px;
+        font-weight: normal;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            color: #ffffff;
+            font-size: 28px;
+        }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        // box model
+        padding: 0 20px;
+
+        // typography
+        color: #000000;
+        font-family: $fontFamilyMain;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.4;
+
+        @media (min-width: $tablet) {
+            // typography
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 18px;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        // box model
+        height: 600px;
+        padding-top: 120px;
+
+        // visual 
+        background-image: url(../img/about-me-background.jpg);
+        background-position: center center;
+    }
+
+    @media (min-width: $desktop) {
+        // box model
+        height: 900px;
+        padding-top: 230px;
+    }
+}

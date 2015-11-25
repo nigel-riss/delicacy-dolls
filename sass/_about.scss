@@ -45,17 +45,18 @@
 
         // typography
         font-family: $fontFamilyMain;
-        font-size: 16px;
+        font-weight: 300;
+        font-size: 14px;
         line-height: 1.4;
 
         @media (min-width: $tablet) {
             // typography
-            font-size: 18px;
+            font-size: 16px;
         }
 
         @media (min-width: $desktop) {
             // typography
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 }

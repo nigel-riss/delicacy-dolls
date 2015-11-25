@@ -4,6 +4,7 @@
 
     // box model
     height: 600px;
+    margin: 0;
 
     // visual
     background-color: #040404;
@@ -37,6 +38,46 @@
 
 @media (min-width: $tablet) {
     .hero {
+        &__news {
+            // positioning
+            position: absolute;
+            bottom: 90px;
+            z-index: 9999;
+
+            // box model
+            width: 100%;
+
+            // typography
+            color: rgba(255, 255, 255, .7);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30px;
+            // outline: 1px dashed red;
+
+            & .container {
+                // box model
+                padding-left: 20px;
+
+                // typography
+                color: rgba(255, 255, 255, .7);
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 30px;
+            }
+
+            & span {
+                padding: 2px 10px;
+                // typography
+                background-color: rgba(0, 0, 0, .3);
+            }
+
+            & b {
+                // typography
+                font-weight: 500;
+            }
+        }
+
+
         &__slide {
             // visual
             background-position: center 0;
@@ -61,6 +102,45 @@
 
 @media (min-width: $desktop) {
     .hero {
+        // &__news {
+        //     // positioning
+        //     position: absolute;
+        //     bottom: 90px;
+        //     z-index: 9999;
+
+        //     // box model
+        //     width: 100%;
+
+        //     // typography
+        //     color: rgba(255, 255, 255, .7);
+        //     font-size: 18px;
+        //     font-weight: 300;
+        //     line-height: 30px;
+        //     // outline: 1px dashed red;
+
+        //     & .container {
+        //         // box model
+        //         padding-left: 20px;
+
+        //         // typography
+        //         color: rgba(255, 255, 255, .7);
+        //         font-size: 18px;
+        //         font-weight: 300;
+        //         line-height: 30px;
+        //     }
+
+        //     & span {
+        //         padding: 2px 10px;
+        //         // typography
+        //         background-color: rgba(0, 0, 0, .3);
+        //     }
+
+        //     & b {
+        //         // typography
+        //         font-weight: 500;
+        //     }
+        // }
+
         &__slide {
             // visual
             background-position: center 0;
