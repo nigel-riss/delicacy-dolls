@@ -9,9 +9,10 @@
 
     // typography
     font-size: 0;
+    // outline: 1px solid red;
 
     &__image {
-        // box model  
+        // box model
         float: left;
         width: 40px;
 
@@ -19,50 +20,52 @@
         fill: #f1f1f1;
 
         @media (min-width: $tablet) {
-            // box model   
-            width: 50px;
+            // box model
+            width: 40px;
         }
 
         @media (min-width: $desktop) {
-            // box model  
-            width: 60px;
+            // box model
+            width: 50px;
         }
     }
 
     &__text {
-        // box model    
+        // box model
         margin: 0;
         padding: 0;
         padding-left: 50px;
 
         // typography
         color: #f1f1f1;
+        // font-family: $fontSerifCaption;
         font-family: $fontSerifCaption;
         font-weight: normal;
         font-size: 18px;
-        line-height: 48px;
+        line-height: 50px;
+        //outline: 1px solid blue;
 
         @media (min-width: $tablet) {
-            // box model       
-            padding-left: 60px;
+            // box model
+            padding-left: 50px;
 
             // typography
-            font-size: 26px;
-            line-height: 64px;
+            font-size: 22px;
+            line-height: 50px;
         }
 
         @media (min-width: $desktop) {
-            // box model      
-            padding-left: 70px;
+            // box model
+            padding-left: 60px;
 
             // typography
             font-size: 32px;
-            line-height: 48px;
+            line-height: 38px;
         }
     }
 
     &__author {
-        // box model   
+        // box model
         display: none;
         padding-left: 50px;
 
@@ -72,20 +75,20 @@
         font-size: 14px;
 
         @media (min-width: $desktop) {
-            // box model   
+            // box model
             display: block;
-            padding-left: 70px;
+            padding-left: 60px;
 
             // typography
             font-size: 16px;
-            font-style: italic;
+            // font-style: italic;
         }
     }
 
     &::after {
         content: "";
 
-        // box model    
+        // box model
         display: table;
         height: 0;
         background: red;
@@ -106,7 +109,7 @@
         }
 
         & .menu-button {
-            // box model       
+            // box model
             // display: none;
             fill: #000000;
         }
@@ -139,7 +142,7 @@
     right: 20px;
     top: 30px;
 
-    // box model   
+    // box model
     width: 24px;
 
     // visual
@@ -152,7 +155,7 @@
     }
 
     @media (min-width: $tablet) {
-        // box model   
+        // box model
         display: none;
     }
 }

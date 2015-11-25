@@ -1,5 +1,5 @@
 .main-menu {
-    // box model  
+    // box model
     height: 0;
     overflow: hidden;
 
@@ -13,7 +13,7 @@
         top: 0;
         right: 0;
 
-        // box model 
+        // box model
         height: auto;
 
         // visual
@@ -21,7 +21,7 @@
     }
 
     &__list {
-        // box model  
+        // box model
         margin: 0;
         padding: 0;
         //padding-bottom: 20px;
@@ -30,7 +30,7 @@
         list-style: none;
 
         @media (min-width: $tablet) {
-            // box model    
+            // box model
             padding-bottom: 0;
             padding-right: 10px;
 
@@ -40,15 +40,15 @@
     }
 
     &__item {
-        // box model      
+        // box model
         margin: 0;
         padding: 0;
 
         @media (min-width: $tablet) {
-            // box model     
+            // box model
             display: inline-block;
             padding: 0 10px;
-            padding-left: 30px;
+            padding-left: 25px;
         }
     }
 
@@ -56,7 +56,7 @@
         // positioning
         position: relative;
 
-        // box model     
+        // box model
         box-sizing: border-box;
         display: block;
         padding: 10px;
@@ -65,8 +65,8 @@
         // typography
         color: #e74c3c;
         font-family: $fontFamilyMobileMenu;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 500;
         //letter-spacing: 1.2px;
         line-height: 20px;
         text-decoration: none;
@@ -94,12 +94,12 @@
             padding: 5px 0;
 
             // typography
-            font-size: 15px;
-            font-weight: normal;
+            font-size: 14px;
+            font-weight: 300;
             text-transform: uppercase;
 
             // visual
-            border-bottom: 2px solid #000000;
+            border-bottom: 1px solid #e74c3c;
         }
     }
 
@@ -107,7 +107,7 @@
         // positioning
         position: relative;
 
-        // box model     
+        // box model
         box-sizing: border-box;
         display: block;
         padding: 10px;
@@ -116,11 +116,10 @@
         // typography
         color: #000000;
         font-family: $fontFamilyMobileMenu;
-        font-size: 16px;
-        font-weight: normal;
-        //letter-spacing: 1.1px;
+        font-size: 14px;
+        font-weight: 300;
         line-height: 20px;
-        text-decoration: none;
+        //text-decoration: none;
         //text-transform: uppercase;
 
         // visual
@@ -129,21 +128,22 @@
 
         @media (min-width: $tablet) {
             // box model       
-            padding: 32px 0;
+            padding: 26px 0;
 
             // typography
             color: #f1f1f1;
-            font-weight: normal;
+            font-weight: 100;
             font-size: 14px;
+            // line-height: 50px;
             text-transform: uppercase;
         }
 
         @media (min-width: $desktop) {
             // box model       
-            padding: 39px 0;
+            padding: 32px 0;
 
             // typography
-            font-size: 15px;
+            font-size: 14px;
         }
 
         &:active,
@@ -174,7 +174,7 @@
             // positioning
             position: absolute;
 
-            // box model        
+            // box model
             display: none;
             height: 1px;
             width: 100%;
@@ -188,14 +188,14 @@
             transition: all .2s linear;
 
             @media (min-width: $tablet) {
-                // box model           
+                // box model
                 display: block;
             }
         }
     }
 
     &--shown {
-        // box model  
+        // box model
         height: 150px;
         padding-bottom: 20px;
 
@@ -224,7 +224,7 @@
             }
 
             @media (min-width: $tablet) {
-                font-weight: normal;
+                font-weight: 300;
             }
         }
     }
