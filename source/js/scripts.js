@@ -17,7 +17,7 @@
         if (winWidth < 768) {
             maxHeight = 480;
         } else if (winWidth < 1000) {
-            maxHeight = 768;
+            maxHeight = 1024;
         } else {
             maxHeight = 1080;
         }
@@ -43,11 +43,16 @@
     //////////////////////
     var heroSlides = document.querySelectorAll(".hero__slide");
     var i = 0;
+    var winWidth = (window.outerWidth > 0) ? window.innerWidth : screen.width;
+    alert(winWidth);
+    var winHeight = (window.outerHeight > 0) ? window.innerHeight : screen.height;
+    var paralaxRatio = 2;
     
     window.onscroll = function () {
         for (i = 0; i < heroSlides.length; i++) {
+            if (winWidth < 1000) return;
             var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            heroSlides[i].style.backgroundPositionY = -scrolled / 2 + "px";
+            heroSlides[i].style.backgroundPositionY = scrolled / paralaxRatio + "px";
         }
     };
 
@@ -57,11 +62,11 @@
     // SLIDER
     //////////////////////
 
-    var currentSlideID = 2;
+    var currentSlideID = 3;
     var currentSlideOpacity = 1;
     var nextSlideID = 0;
     var nextSlideOpacity = 0;
-    var numberOfSlides = 3;
+    var numberOfSlides = 4;
     var opacityStep = 0.01;
     var slideDelay = 5;
     var slideDelayCounter = 100;
@@ -134,25 +139,39 @@
                 var linkedElement = document.querySelector(event.target.getAttribute("href"));
                 //var elementOffset = linkedElement.getBoundingClientRect().top;
                 //window.scrollBy(0, elementOffset);
-                slowScrollTo(linkedElement);
+                // slowScrollTo(linkedElement);
+                scrollTo(linkedElement.getBoundingClientRect().top, 1200);
             });
         }
     }
     
     //var scrollInterval;
-    function slowScrollTo(element) {
-        var elementOffset = element.getBoundingClientRect().top;
-        var scrollPerFrame = (elementOffset - window.pageYOffset) / 100;
-        var scrollStep = 0;
-        var scrollInterval = setInterval(function () {
+    // function slowScrollTo(element) {
+    //     var elementOffset = element.getBoundingClientRect().top;
+    //     var scrollPerFrame = (elementOffset - window.pageYOffset) / 100;
+    //     var scrollStep = 0;
+    //     var scrollInterval = setInterval(function () {
             
-            if (scrollStep > 100) {
-                window.scrollTo(0, elementOffset);
-                clearInterval(scrollInterval);
-            } else {
-                scrollStep++;
-                window.scrollBy(0, scrollPerFrame);
-            }
+    //         if (scrollStep > 100) {
+    //             window.scrollTo(0, elementOffset);
+    //             clearInterval(scrollInterval);
+    //         } else {
+    //             scrollStep++;
+    //             window.scrollBy(0, scrollPerFrame);
+    //         }
+    //     }, 10);
+    // }
+
+    function scrollTo(to, duration) {
+        if (duration <= 0) return;
+        var difference = to - window.pageYOffset;
+        var perTick = difference / duration * 10;
+        console.log(to);
+
+        setTimeout(function () {
+            window.scrollBy(0, perTick);
+            if (window.pageYOffset == to) return;
+            scrollTo(to, duration - 10);
         }, 10);
     }
 }());

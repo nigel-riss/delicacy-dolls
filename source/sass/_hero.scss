@@ -17,7 +17,7 @@
         height: 100%;
         width: 100%;
         background-position: center -57px;
-        background-attachment: fixed;
+        // background-attachment: fixed;
 
         &--1 {
             // visual
@@ -32,6 +32,11 @@
         &--3 {
             // visual
             background-image: url(../img/slide-3-320.jpg);
+        }
+
+        &--4 {
+            // visual
+            background-image: url(../img/slide-4-320.jpg);
         }
     }
 }
@@ -107,6 +112,11 @@
                 // visual
                 background-image: url(../img/slide-3-768.jpg);
             }
+
+            &--4 {
+                // visual
+                background-image: url(../img/slide-4-768.jpg);
+            }
         }
     }
 }
@@ -116,6 +126,7 @@
         &__slide {
             // visual
             background-position: center 0;
+            //background-attachment: fixed;
 
             &--1 {
                 // visual
@@ -130,6 +141,11 @@
             &--3 {
                 // visual
                 background-image: url(../img/slide-3-1000.jpg);
+            }
+
+            &--4 {
+                // visual
+                background-image: url(../img/slide-4-1000.jpg);
             }
         }
     }

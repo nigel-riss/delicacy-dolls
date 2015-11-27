@@ -37,19 +37,19 @@
  * ======================================================= */
 
 
-/	//This is optional, but you need it for a full width gallery 
-  	/*body{
+/*This is optional, but you need it for a full width gallery */
+/*body{
       margin:0;
       min-height: 1000px;
       overflow-y: scroll; 
    	}*/
 
 
-	//This is for preventing that the content of your page shifts to the right when magnific popup is activated
-   	html {
-    	margin-right: 0 !important;
-    	overflow: visible !important;
-	}
+/*This is for preventing that the content of your page shifts to the right when magnific popup is activated*/
+html {
+    margin-right: 0 !important;
+    overflow: visible !important;
+}
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1723,7 +1723,7 @@ a.media-box-read-more-link:hover {
     -webkit-box-sizing: border-box;  Safari/Chrome, other WebKit 
        -moz-box-sizing: border-box;    Firefox, other Gecko 
             box-sizing: border-box;         Opera/IE 8+ */
-            padding: 0 5px;
+    padding: 0 5px;
 }
 
 .media-boxes-filter > li:last-child {
