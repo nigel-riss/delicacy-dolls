@@ -44,7 +44,6 @@
     var heroSlides = document.querySelectorAll(".hero__slide");
     var i = 0;
     var winWidth = (window.outerWidth > 0) ? window.innerWidth : screen.width;
-    alert(winWidth);
     var winHeight = (window.outerHeight > 0) ? window.innerHeight : screen.height;
     var paralaxRatio = 2;
     
