@@ -558,7 +558,9 @@ body {
 .header {
     position: absolute;
     z-index: 3;
+    box-sizing: border-box;
     width: 100%;
+    height: 70px;
     font-size: 0;
     background-color: rgba(4, 4, 4, .5);
     transition: all .5s linear;
@@ -576,6 +578,11 @@ body {
 .header--gallery {
     background-color: #ffffff;
 }
+@media (min-width: 1000px) {
+    .header {
+        height: 84px;
+    }
+}
 
 .logo {
     position: relative;
@@ -585,7 +592,9 @@ body {
     font-size: 0;
 }
 .logo__image {
-    float: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
     width: 40px;
     fill: #f1f1f1;
 }
@@ -663,23 +672,6 @@ body {
     color: #000000;
 }
 
-.menu-button {
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    width: 24px;
-    cursor: pointer;
-    fill: #f1f1f1;
-}
-.menu-button--gallery {
-    fill: #000000;
-}
-@media (min-width: 768px) {
-    .menu-button {
-        display: none;
-    }
-}
-
 .main-menu {
     height: 0;
     overflow: hidden;
@@ -692,6 +684,7 @@ body {
         top: 0;
         right: 0;
         height: auto;
+        padding-right: 20px;
         opacity: 1;
     }
 }
@@ -754,7 +747,7 @@ body {
 }
 @media (min-width: 768px) {
     .main-menu__item-link {
-        padding: 26px 0;
+        padding: 25px 0;
         color: #f1f1f1;
         font-weight: 100;
         font-size: 14px;
@@ -804,6 +797,9 @@ body {
     padding-bottom: 20px;
     opacity: 1;
 }
+.main-menu--shown main-menu__flag {
+    display: block;
+}
 .main-menu--gallery .main-menu__item-link {
     color: #000000;
 }
@@ -823,6 +819,55 @@ body {
 @media (min-width: 768px) {
     .main-menu--gallery .main-menu__item-link {
         font-weight: 300;
+    }
+}
+.main-menu__flag {
+    position: absolute;
+    left: 230px;
+    top: 18px;
+    width: 20px;
+    height: 14px;
+}
+.main-menu__flag:hover {
+    opacity: 1;
+}
+.main-menu__flag--en {
+    background-image: url(../img/ru.svg);
+    background-size: 100%;
+    background-position: center;
+}
+.main-menu__flag--ru {
+    background-image: url(../img/en.svg);
+    background-size: 100%;
+    background-position: center;
+}
+@media (min-width: 768px) {
+    .main-menu__flag {
+        left: 260px;
+        opacity: .5;
+    }
+}
+@media (min-width: 1000px) {
+    .main-menu__flag {
+        top: 10px;
+        left: 350px;
+    }
+}
+
+.menu-button {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 24px;
+    cursor: pointer;
+    fill: #f1f1f1;
+}
+.menu-button--gallery {
+    fill: #000000;
+}
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
     }
 }
 
