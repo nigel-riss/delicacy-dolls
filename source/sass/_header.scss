@@ -16,6 +16,9 @@
     transition: all .5s linear;
 
     &--menu-shown {
+        // box model
+        height: 230px;
+
         //visual
         background-color: #f1f1f1;
         background-color: rgba(241, 241, 241, .9);

@@ -176,6 +176,7 @@
 
         // visual
         opacity: 1;
+        transition: height .5s linear;
 
         & main-menu__flag {
             // box model
