@@ -12,8 +12,12 @@
     // outline: 1px solid red;
 
     &__image {
+        // positioning
+        position: absolute;
+        top: 10px;
+        left: 20px;
         // box model
-        float: left;
+        // float: left;
         width: 40px;
 
         // visual
@@ -132,30 +136,5 @@
                 color: #000000;
             }
         }
-    }
-}
-
-
-.menu-button {
-    // positioning
-    position: absolute;
-    right: 20px;
-    top: 30px;
-
-    // box model
-    width: 24px;
-
-    // visual
-    cursor: pointer;
-    fill: #f1f1f1;
-
-    &--gallery {
-        // visual
-        fill: #000000;
-    }
-
-    @media (min-width: $tablet) {
-        // box model
-        display: none;
     }
 }

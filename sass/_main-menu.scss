@@ -15,6 +15,7 @@
 
         // box model
         height: auto;
+        padding-right: 20px;
 
         // visual
         opacity: 1;
@@ -67,28 +68,8 @@
         font-family: $fontFamilyMobileMenu;
         font-size: 14px;
         font-weight: 500;
-        //letter-spacing: 1.2px;
         line-height: 20px;
         text-decoration: none;
-
-        // &::before {
-        //     content: "";
-
-        //     // positioning
-        //     position: absolute;
-        //     left: 30px;
-        //     top: 5px;
-
-        //     // box model     
-        //     display: block;
-        //     height: 30px;
-        //     width: 3px;
-
-        //     // visual
-        //     // background: linear-gradient(to left bottom, #000000, #000000 49%, #ffffff 50%, #ffffff);
-        //     // transform: rotate(45deg);
-        //     background-color: #cccccc;
-        // }
 
         @media (min-width: $tablet) {
             padding: 5px 0;
@@ -119,16 +100,10 @@
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
-        //text-decoration: none;
-        //text-transform: uppercase;
-
-        // visual
-        //background-color: $backColorMain;
-        //background-color: rgba(241, 241, 241, .9);
 
         @media (min-width: $tablet) {
             // box model       
-            padding: 26px 0;
+            padding: 25px 0;
 
             // typography
             color: #f1f1f1;
@@ -201,6 +176,11 @@
 
         // visual
         opacity: 1;
+
+        & main-menu__flag {
+            // box model
+            display: block;
+        }
     }
 
     &--gallery {
@@ -226,6 +206,54 @@
             @media (min-width: $tablet) {
                 font-weight: 300;
             }
+        }
+    }
+
+    &__flag {
+        // positioning
+        position: absolute;
+        left: 230px;
+        top: 18px;
+
+        // box model
+        width: 20px;
+        height: 14px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--en {
+            // visual
+            background-image: url(../img/ru.svg);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        &--ru {
+            // visual
+            background-image: url(../img/en.svg);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        @media (min-width: $tablet) {
+            // positioning
+            left: 260px;
+
+            // box model
+            // display: block;
+            // width: 32px;
+            // height: 20px;
+
+            // visual
+            opacity: .5;
+        }
+
+        @media (min-width: $desktop) {
+            // positioning
+            top: 10px;
+            left: 350px;
         }
     }
 }
