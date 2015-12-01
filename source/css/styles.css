@@ -958,6 +958,7 @@ body {
     }
     .hero__slide--3 {
         background-image: url(../img/slide-3-1000.jpg);
+        background-position: right 0;
     }
     .hero__slide--4 {
         background-image: url(../img/slide-4-1000.jpg);
