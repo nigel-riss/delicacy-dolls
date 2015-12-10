@@ -73,7 +73,7 @@
             & span {
                 padding: 2px 10px;
                 // typography
-                background-color: rgba(0, 0, 0, .3);
+                background-color: rgba(0, 0, 0, .5);
             }
 
             & b {
@@ -85,7 +85,12 @@
 
         &__link {
             // typography
+            // color: #e74c3c;
             color: #ffffff;
+            font-weight: 500;
+
+            // visual
+
 
             &:hover {
                 // visual
