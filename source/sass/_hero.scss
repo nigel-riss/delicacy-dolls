@@ -38,6 +38,11 @@
             // visual
             background-image: url(../img/slide-4-320.jpg);
         }
+
+        &--5 {
+            // visual
+            background-image: url(../img/slide-5-320.jpg);
+        }
     }
 }
 
@@ -122,6 +127,11 @@
                 // visual
                 background-image: url(../img/slide-4-768.jpg);
             }
+
+            &--5 {
+                // visual
+                background-image: url(../img/slide-5-768.jpg);
+            }
         }
     }
 }
@@ -152,6 +162,11 @@
             &--4 {
                 // visual
                 background-image: url(../img/slide-4-1000.jpg);
+            }
+
+            &--5 {
+                // visual
+                background-image: url(../img/slide-5-1000.jpg);
             }
         }
     }

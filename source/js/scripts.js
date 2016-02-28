@@ -47,13 +47,13 @@
     var winHeight = (window.outerHeight > 0) ? window.innerHeight : screen.height;
     var paralaxRatio = 2;
     
-    window.onscroll = function () {
-        for (i = 0; i < heroSlides.length; i++) {
-            if (winWidth < 1000) return;
-            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            heroSlides[i].style.backgroundPositionY = scrolled / paralaxRatio + "px";
-        }
-    };
+    // window.onscroll = function () {
+    //     for (i = 0; i < heroSlides.length; i++) {
+    //         if (winWidth < 1000) return;
+    //         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    //         heroSlides[i].style.backgroundPositionY = scrolled / paralaxRatio + "px";
+    //     }
+    // };
 
 
 
@@ -61,11 +61,11 @@
     // SLIDER
     //////////////////////
 
-    var currentSlideID = 3;
+    var currentSlideID = 4;
     var currentSlideOpacity = 1;
     var nextSlideID = 0;
     var nextSlideOpacity = 0;
-    var numberOfSlides = 4;
+    var numberOfSlides = 5;
     var opacityStep = 0.01;
     var slideDelay = 5;
     var slideDelayCounter = 100;
