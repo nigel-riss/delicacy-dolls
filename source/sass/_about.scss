@@ -1,0 +1,62 @@
+.about {
+    // box model
+    padding-bottom: 60px;
+}
+
+.about-dolls {
+    // box model
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
+
+    // visual
+    background-color: #f1f1f1;
+
+    &__image {
+        // box model
+        width: 100%;
+    }
+
+    &__caption {
+        // box model
+        padding-bottom: 20px;
+
+        // typography
+        // font-family: $fontSerifCaption;
+        font-family: $fontSerifCaption;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 28px;
+        }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        // box model
+        padding: 0 20px;
+
+        // typography
+        font-family: $fontFamilyMain;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.4;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 18px;
+        }
+    }
+}

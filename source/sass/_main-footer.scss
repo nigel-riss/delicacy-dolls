@@ -1,0 +1,89 @@
+.main-footer {
+    // box model  
+    padding-top: 50px;
+    width: 100%;
+
+    // visual
+    background-color: #040404;
+
+    &__caption {
+        // box model  
+        //padding-bottom: 50px;
+
+        // typography
+        color: #f1f1f1;
+        font-family: $fontSerifCaption;
+        font-size: 22px;
+        font-weight: normal;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 28px;
+        }
+
+        @media (min-width: $desktop) {
+            // typography
+            font-size: 32px;
+        }
+    }
+
+    &__text {
+        // box model  
+        padding: 0 20px;
+        padding-top: 40px;
+        margin: 0;
+
+        // typography
+        color: #f1f1f1;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.4;
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            // typography
+            font-size: 16px;
+        }
+        @media (min-width: $desktop ) {
+            // typography
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        // box model    
+        //padding: 5px 0;
+
+        // typography
+        //color: #040404;
+        color: #f1f1f1;
+        text-decoration: none;
+
+        // visual
+        border-bottom: 1px dashed #f1f1f1;
+        //background-color: #f1f1f1;
+    }
+
+    &__info-block {
+        // box model      
+        padding-bottom: 60px;
+        //        padding-left: 10px;
+        padding-top: 60px;
+
+        // typography
+        color: #f1f1f1;
+        text-align: center;
+        font-size: 12px;
+        line-height: 20px;
+
+        // visual
+    }
+
+    @media (min-width: $tablet) {
+        // visual
+        background-image: url(../img/contacts-back.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+}

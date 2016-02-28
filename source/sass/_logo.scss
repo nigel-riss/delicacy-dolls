@@ -1,0 +1,140 @@
+.logo {
+    //positioning
+    position: relative;
+
+    // box model  
+    clear: both;
+    padding: 10px 20px;
+    padding-bottom: 6px;
+
+    // typography
+    font-size: 0;
+    // outline: 1px solid red;
+
+    &__image {
+        // positioning
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        // box model
+        // float: left;
+        width: 40px;
+
+        // visual
+        fill: #f1f1f1;
+
+        @media (min-width: $tablet) {
+            // box model
+            width: 40px;
+        }
+
+        @media (min-width: $desktop) {
+            // box model
+            width: 50px;
+        }
+    }
+
+    &__text {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-left: 50px;
+
+        // typography
+        color: #f1f1f1;
+        // font-family: $fontSerifCaption;
+        font-family: $fontSerifCaption;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 50px;
+        //outline: 1px solid blue;
+
+        @media (min-width: $tablet) {
+            // box model
+            padding-left: 50px;
+
+            // typography
+            font-size: 22px;
+            line-height: 50px;
+        }
+
+        @media (min-width: $desktop) {
+            // box model
+            padding-left: 60px;
+
+            // typography
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+
+    &__author {
+        // box model
+        display: none;
+        padding-left: 50px;
+
+        // typography
+        color: #f1f1f1;
+        font-family: "Playfair Display SC", serif;
+        font-size: 14px;
+
+        @media (min-width: $desktop) {
+            // box model
+            display: block;
+            padding-left: 60px;
+
+            // typography
+            font-size: 16px;
+            // font-style: italic;
+        }
+    }
+
+    &::after {
+        content: "";
+
+        // box model
+        display: table;
+        height: 0;
+        background: red;
+        clear: both;
+    }
+
+    &--menu-shown {
+        & .logo {
+            &__image {
+                // visual
+                fill: #000000;
+            }
+
+            &__text {
+                // typography
+                color: #000000;
+            }
+        }
+
+        & .menu-button {
+            // box model
+            // display: none;
+            fill: #000000;
+        }
+    }
+
+    &--gallery {
+        & .logo {
+            &__image {
+                // visual
+                fill: #000000;
+            }
+
+            &__text {
+                // typography
+                color: #000000;
+            }
+
+            &__author {
+                // typography
+                color: #000000;
+            }
+        }
+    }
+}

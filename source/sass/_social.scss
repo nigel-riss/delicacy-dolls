@@ -1,0 +1,65 @@
+
+.social {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    // box model   
+    width: 100%;
+    padding: 10px 0;
+
+    // visual
+    background-color: rgba(4, 4, 4, .5);
+
+    &__list {
+        // box model 
+        margin: 0 auto;
+        width: 200px;
+        padding: 0;
+        // not yet for iPad. soz
+        //display: flex;
+        //justify-content: space-between;
+
+        // typography
+        text-align: center;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        // box model      
+        display: inline-block;
+    }
+
+    &__item-link {
+        // box model    
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px;
+        // typography
+        color: #f1f1f1;
+        font-size: 16px;
+
+        &:hover {
+            // typography
+            color: #040404;
+
+            // visual
+            background-color: #f1f1f1;
+        }
+    }
+
+    &--footer {
+        // positioning
+        position: relative;
+
+        // box model      
+        //padding-top: 10px;
+        //padding: 0;
+
+        // visual 
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,13 @@
+body {
+    // box model
+    padding: 0;
+    margin: 0;
+    min-width: 320px;
+
+    // typography
+    color: $fontColorMain;
+    font-family: $fontFamilyMain;
+
+    // visual
+    background-color: #f1f1f1;
+}

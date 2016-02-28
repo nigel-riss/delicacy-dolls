@@ -1,0 +1,260 @@
+.main-menu {
+    // box model
+    height: 0;
+    overflow: hidden;
+
+    // visual
+    opacity: 0;
+    transition: all .3s ease-out;
+
+    @media (min-width: $tablet) {
+        // positioning
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        // box model
+        height: auto;
+        padding-right: 20px;
+
+        // visual
+        opacity: 1;
+    }
+
+    &__list {
+        // box model
+        margin: 0;
+        padding: 0;
+        //padding-bottom: 20px;
+
+        // visual
+        list-style: none;
+
+        @media (min-width: $tablet) {
+            // box model
+            padding-bottom: 0;
+            padding-right: 10px;
+
+            // visual
+            background-color: transparent;
+        }
+    }
+
+    &__item {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: $tablet) {
+            // box model
+            display: inline-block;
+            padding: 0 10px;
+            padding-left: 25px;
+        }
+    }
+
+    &__item-current {
+        // positioning
+        position: relative;
+
+        // box model
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+        padding-left: 70px;
+
+        // typography
+        color: #e74c3c;
+        font-family: $fontFamilyMobileMenu;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+
+        @media (min-width: $tablet) {
+            padding: 5px 0;
+
+            // typography
+            font-size: 14px;
+            font-weight: 300;
+            text-transform: uppercase;
+
+            // visual
+            border-bottom: 1px solid #e74c3c;
+        }
+    }
+
+    &__item-link {
+        // positioning
+        position: relative;
+
+        // box model
+        box-sizing: border-box;
+        display: block;
+        padding: 10px;
+        padding-left: 70px;
+
+        // typography
+        color: #000000;
+        font-family: $fontFamilyMobileMenu;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+
+        @media (min-width: $tablet) {
+            // box model       
+            padding: 25px 0;
+
+            // typography
+            color: #f1f1f1;
+            font-weight: 100;
+            font-size: 14px;
+            // line-height: 50px;
+            text-transform: uppercase;
+        }
+
+        @media (min-width: $desktop) {
+            // box model       
+            padding: 32px 0;
+
+            // typography
+            font-size: 14px;
+        }
+
+        &:active,
+        &:hover {
+            // typography
+            color: #f1f1f1;
+
+            // visual
+            background-color: rgba(0, 0, 0, .9);
+
+            @media (min-width: $tablet) {
+                // visual
+                background-color: transparent;
+            }
+
+            &::after {
+                // visual
+                opacity: .5;
+
+                // transformation
+                transform: translateY(5px);
+            }
+        }
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+
+            // box model
+            display: none;
+            height: 1px;
+            width: 100%;
+
+            // visual 
+            background-color: #f1f1f1;
+            opacity: 0;
+
+            // transformation
+            transform: translateY(20px);
+            transition: all .2s linear;
+
+            @media (min-width: $tablet) {
+                // box model
+                display: block;
+            }
+        }
+    }
+
+    &--shown {
+        // box model
+        height: 150px;
+        padding-bottom: 20px;
+
+        // visual
+        opacity: 1;
+        transition: height .5s linear;
+
+        & main-menu__flag {
+            // box model
+            display: block;
+        }
+    }
+
+    &--gallery {
+        .main-menu__item-link {
+            // typography
+            color: #000000;
+
+            &:active,
+            &:hover {
+                // typography
+                color: #f1f1f1;
+
+                @media (min-width: $tablet) {
+                    // typography
+                    color: #000000;
+                }
+            }
+
+            &::after {
+                background-color: #000000;
+            }
+
+            @media (min-width: $tablet) {
+                font-weight: 300;
+            }
+        }
+    }
+
+    &__flag {
+        // positioning
+        position: absolute;
+        left: 230px;
+        top: 18px;
+
+        // box model
+        width: 20px;
+        height: 14px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--en {
+            // visual
+            background-image: url(../img/ru.svg);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        &--ru {
+            // visual
+            background-image: url(../img/en.svg);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        @media (min-width: $tablet) {
+            // positioning
+            left: 260px;
+
+            // box model
+            // display: block;
+            // width: 32px;
+            // height: 20px;
+
+            // visual
+            opacity: .5;
+        }
+
+        @media (min-width: $desktop) {
+            // positioning
+            top: 10px;
+            left: 350px;
+        }
+    }
+}

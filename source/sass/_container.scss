@@ -1,0 +1,14 @@
+.container {
+    // positioning
+    position: relative;
+
+    // typography
+    font-size: 0;
+    // outline: 1px solid red;
+
+    @media (min-width: $desktop) {
+        // box model 
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}

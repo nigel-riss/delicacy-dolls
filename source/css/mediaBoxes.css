@@ -36,20 +36,20 @@
  *    
  * ======================================================= */
 
-/*
-	//This is optional, but you need it for a full width gallery 
-  	body{
+
+/*This is optional, but you need it for a full width gallery */
+/*body{
       margin:0;
       min-height: 1000px;
       overflow-y: scroll; 
    	}*/
 
-/*
-	//This is for preventing that the content of your page shifts to the right when magnific popup is activated
-   	html {
-    	margin-right: 0 !important;
-    	overflow: visible !important;
-	}*/
+
+/*This is for preventing that the content of your page shifts to the right when magnific popup is activated*/
+html {
+    margin-right: 0 !important;
+    overflow: visible !important;
+}
 
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1712,16 +1712,18 @@ a.media-box-read-more-link:hover {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .media-boxes-filter > li {
-    display: inline-block;
+    /*display: inline-block;
     line-height: 16px;
     margin: 0 8px 0 0;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-       -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-            box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box;  Safari/Chrome, other WebKit 
+       -moz-box-sizing: border-box;    Firefox, other Gecko 
+            box-sizing: border-box;         Opera/IE 8+ */
+    padding: 0 5px;
 }
 
 .media-boxes-filter > li:last-child {
@@ -1729,7 +1731,7 @@ a.media-box-read-more-link:hover {
 }
 
 .media-boxes-filter > li a {
-    display: block;
+    /*display: block;
     cursor: pointer;
     color: #676767;
     font-size: 12px;
@@ -1750,7 +1752,20 @@ a.media-box-read-more-link:hover {
        -moz-box-shadow: 0 1px 1px rgba(34,25,25,.2);
          -o-box-shadow: 0 1px 1px rgba(34,25,25,.2);
         -ms-box-shadow: 0 1px 1px rgba(34,25,25,.2);
-            box-shadow: 0 1px 1px rgba(34,25,25,.2);
+            box-shadow: 0 1px 1px rgba(34,25,25,.2);*/
+
+    display: inline-block;
+    color: #f1f1f1;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 5px;
+}
+
+@media (min-width: 768px) {
+    .media-boxes-filter > li {
+        display: inline-block;
+    }
 }
 
 .media-boxes-filter > li a:hover {
@@ -1760,11 +1775,13 @@ a.media-box-read-more-link:hover {
 }
 
 .media-boxes-filter > li a.selected {
-    background: #e54e53 !important;
+    /*background: #e54e53 !important;
     color: #ffffff !important;
     -webkit-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15) !important;
        -moz-box-shadow: inset 0 -2px 0 rgba(0,0,0,.15) !important;
-            box-shadow: inset 0 -2px 0 rgba(0,0,0,.15) !important;
+            box-shadow: inset 0 -2px 0 rgba(0,0,0,.15) !important;*/
+    color: #e74c3c;
+    border-bottom: 1px dashed #e74c3c;
 }
 
 /* ====================================================================== *
