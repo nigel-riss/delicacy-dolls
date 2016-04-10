@@ -576,7 +576,8 @@ body {
     width: 100%;
     clear: both;
 }
-.header--gallery {
+.header--gallery,
+.header--black-on-white {
     background-color: #ffffff;
 }
 @media (min-width: 1000px) {
@@ -663,13 +664,16 @@ body {
 .logo--menu-shown .menu-button {
     fill: #000000;
 }
-.logo--gallery .logo__image {
+.logo--gallery .logo__image,
+.logo--black-on-white .logo__image {
     fill: #000000;
 }
-.logo--gallery .logo__text {
+.logo--gallery .logo__text,
+.logo--black-on-white .logo__text {
     color: #000000;
 }
-.logo--gallery .logo__author {
+.logo--gallery .logo__author,
+.logo--black-on-white .logo__author {
     color: #000000;
 }
 
@@ -802,24 +806,31 @@ body {
 .main-menu--shown main-menu__flag {
     display: block;
 }
-.main-menu--gallery .main-menu__item-link {
+.main-menu--gallery .main-menu__item-link,
+.main-menu--black-on-white .main-menu__item-link {
     color: #000000;
 }
 .main-menu--gallery .main-menu__item-link:active,
-.main-menu--gallery .main-menu__item-link:hover {
+.main-menu--gallery .main-menu__item-link:hover,
+.main-menu--black-on-white .main-menu__item-link:active,
+.main-menu--black-on-white .main-menu__item-link:hover {
     color: #f1f1f1;
 }
 @media (min-width: 768px) {
     .main-menu--gallery .main-menu__item-link:active,
-    .main-menu--gallery .main-menu__item-link:hover {
+    .main-menu--gallery .main-menu__item-link:hover,
+    .main-menu--black-on-white .main-menu__item-link:active,
+    .main-menu--black-on-white .main-menu__item-link:hover {
         color: #000000;
     }
 }
-.main-menu--gallery .main-menu__item-link::after {
+.main-menu--gallery .main-menu__item-link::after,
+.main-menu--black-on-white .main-menu__item-link::after {
     background-color: #000000;
 }
 @media (min-width: 768px) {
-    .main-menu--gallery .main-menu__item-link {
+    .main-menu--gallery .main-menu__item-link,
+    .main-menu--black-on-white .main-menu__item-link {
         font-weight: 300;
     }
 }
@@ -864,7 +875,7 @@ body {
     cursor: pointer;
     fill: #f1f1f1;
 }
-.menu-button--gallery {
+.menu-button--black-on-white {
     fill: #000000;
 }
 @media (min-width: 768px) {
@@ -972,6 +983,7 @@ body {
     }
     .hero__slide--5 {
         background-image: url(../img/slide-5-1000.jpg);
+        background-position: right center;
     }
 }
 
@@ -1202,6 +1214,103 @@ body {
     margin: 0;
     min-height: 1000px;
     background-color: #040404;
+}
+
+.latest-news {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.post-preview {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+}
+.post-preview__caption {
+    position: absolute;
+    top: 180px;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, .44);
+    transition: all .4s;
+}
+.post-preview__time {
+    font-size: 14px;
+    font-style: italic;
+}
+.post-preview__image {
+    width: 100%;
+}
+.post-preview:hover .post-preview__caption {
+    color: #212121;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.blog-post {
+    padding-top: 70px;
+}
+@media (min-width: 1000px) {
+    .blog-post {
+        padding-top: 84px;
+    }
+}
+
+.post-header {
+    height: 600px;
+    background-position: center center;
+}
+.post-header__caption {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    margin-top: 400px;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 1;
+    background-color: rgba(0, 0, 0, .44);
+}
+.post-header__caption:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    height: 100%;
+    width: 2000px;
+    background-color: rgba(0, 0, 0, .44);
+}
+.post-header__time {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.post-content {
+    padding: 70px 0;
+}
+.post-content__text {
+    padding: 0 20px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.blog-nav {
+    padding-bottom: 70px;
+    text-align: center;
+}
+.blog-nav__button {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0 10px;
+    line-height: 36px;
+    border: 1px solid #a6a6a6;
+    border-radius: 18px;
 }
 
 a {

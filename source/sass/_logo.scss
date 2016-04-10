@@ -119,7 +119,8 @@
         }
     }
 
-    &--gallery {
+    &--gallery,
+    &--black-on-white {
         & .logo {
             &__image {
                 // visual
