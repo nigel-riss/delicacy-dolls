@@ -184,7 +184,8 @@
         }
     }
 
-    &--gallery {
+    &--gallery,
+    &--black-on-white {
         .main-menu__item-link {
             // typography
             color: #000000;
