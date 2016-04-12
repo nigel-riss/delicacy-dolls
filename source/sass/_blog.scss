@@ -161,9 +161,20 @@
 
         // typography
         line-height: 36px;
+        font-weight: 100;
 
         // visual
         border: 1px solid #a6a6a6;
         border-radius: 18px;
+
+        &:link,
+        &:visited {
+            color: #212121;
+        }
+
+        &:hover {
+            color: #ffffff;
+            background-color: #a6a6a6;
+        }
     }
 }
