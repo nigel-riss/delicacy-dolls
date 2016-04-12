@@ -1309,8 +1309,32 @@ body {
     padding: 0 20px;
     margin: 0 10px;
     line-height: 36px;
+    font-weight: 100;
     border: 1px solid #a6a6a6;
     border-radius: 18px;
+}
+.blog-nav__button:link,
+.blog-nav__button:visited {
+    color: #212121;
+}
+.blog-nav__button:hover {
+    color: #ffffff;
+    background-color: #a6a6a6;
+}
+
+.simple-footer {
+    padding: 0;
+    margin: 0;
+    background-color: #040404;
+}
+.simple-footer__copyrights {
+    padding: 0;
+    margin: 0;
+    margin-top: -11px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: right;
 }
 
 a {
