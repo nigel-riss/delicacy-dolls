@@ -44,3 +44,9 @@ a {
         font-size: 32px;
     }
 }
+
+.m-only {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
