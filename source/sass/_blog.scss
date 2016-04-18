@@ -77,9 +77,16 @@
 
 .post-header {
     // box model
-    height: 600px;
+    height: 300px;
+    @media (min-width: $tablet) {
+        height: 400px;
+    }
+    @media (min-width: $desktop) {
+        height: 600px;
+    }
 
     // visual
+    background-size: auto 100%;
     background-position: center center;
 
     &__caption {
@@ -89,14 +96,28 @@
         // box model
         display: inline-block;
         margin: 0;
-        margin-top: 400px;
+        margin-top: 170px;
+        @media (min-width: $tablet) {
+            margin-top: 270px;
+        }
+        @media (min-width: $desktop) {
+            margin-top: 400px;
+        }
         padding: 20px;
 
         // typography
         color: #ffffff;
         font-weight: 100;
-        font-size: 36px;
-        line-height: 1;
+        font-size: 20px;
+        line-height: 1.2;
+        @media (min-width: $tablet) {
+            font-size: 28px;
+            line-height: 1.1;
+        }
+        @media (min-width: $desktop) {
+            font-size: 36px;
+            line-height: 1;
+        }
 
         // visual
         background-color: rgba(0, 0, 0, .44);
@@ -123,7 +144,13 @@
         // typography
         color: #ffffff;
         font-weight: 100;
-        font-size: 18px;
+        font-size: 14px;
+        @media (min-width: $tablet) {
+            font-size: 16px;
+        }
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
     }
 }
 
@@ -131,7 +158,13 @@
 
 .post-content {
     // box model
-    padding: 70px 0;
+    padding: 10px 0;
+    @media (min-width: $tablet) {
+        padding: 40px 0;
+    }
+    @media (min-width: $desktop) {
+        padding-top: 70px 0;
+    }
 
     &__text {
         // box model
@@ -148,7 +181,13 @@
 
 .blog-nav {
     // box model
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    @media (min-width: $tablet) {
+        padding-bottom: 50px;
+    }
+    @media (min-width: $desktop) {
+        padding-bottom: 70px;
+    }
 
     // typography
     text-align: center;
@@ -157,7 +196,7 @@
         // box model
         display: inline-block;
         padding: 0 20px;
-        margin: 0 10px;
+        margin: 10px;
 
         // typography
         line-height: 36px;

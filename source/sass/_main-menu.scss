@@ -5,7 +5,7 @@
 
     // visual
     opacity: 0;
-    transition: all .3s ease-out;
+    transition: all .1s ease-out;
 
     @media (min-width: $tablet) {
         // positioning
@@ -160,7 +160,7 @@
 
             // transformation
             transform: translateY(20px);
-            transition: all .2s linear;
+            transition: all .1s linear;
 
             @media (min-width: $tablet) {
                 // box model
@@ -176,7 +176,7 @@
 
         // visual
         opacity: 1;
-        transition: height .5s linear;
+        transition: height .3s linear;
 
         & main-menu__flag {
             // box model
