@@ -1154,6 +1154,7 @@ html {
 .main-footer {
     padding-top: 50px;
     width: 100%;
+    margin-bottom: -60px;
     background-color: #040404;
 }
 .main-footer__caption {
