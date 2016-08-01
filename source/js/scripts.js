@@ -102,7 +102,8 @@
         slideDelayCounter--;
     }
 
-    setInterval(changeSlide, 30);
+    //disabled for the time of auction
+    // setInterval(changeSlide, 30);
 
 
     //////////////////////
