@@ -166,6 +166,28 @@
         padding-top: 70px 0;
     }
 
+    &__main-title {
+        // box model
+        padding: 0 20px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+
+        // typography
+        font-weight: 100;
+        font-size: 48px;
+    }
+
+    &__title {
+        // box model
+        padding: 0 20px;
+        margin-bottom: 10px;
+        margin-top: 60px;
+
+        // typography
+        font-weight: 100;
+        font-size: 32px;
+    }
+
     &__text {
         // box model
         padding: 0 20px;
@@ -173,7 +195,35 @@
         // typography
         font-weight: 100;
         font-size: 18px;
-        line-height: 1.5;
+        line-height: 1.6;
+    }
+
+    &__image {
+        // typography
+        text-align: center;
+    }
+
+
+    ul {
+        // box model
+        margin: 0;
+        padding: 0 20px;
+
+        // list
+        list-style: none;
+
+        li {
+            &::before {
+                content: "— ";
+            }
+        }
+    }
+
+    ol {
+        // box model
+        margin: 0;
+        padding: 0 20px;
+        padding-left: 39px;
     }
 }
 
