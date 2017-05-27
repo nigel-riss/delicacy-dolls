@@ -1,6 +1,7 @@
 .preorder-option {
     // box model
     display: inline-block;
+    margin: 10px;
 
     &__image {
         img {
@@ -12,5 +13,8 @@
 
     &__title {
         // typography
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
     }
 }
