@@ -1,0 +1,20 @@
+.preorder-option {
+    // box model
+    display: inline-block;
+    margin: 10px;
+
+    &__image {
+        img {
+            // box model
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        // typography
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}

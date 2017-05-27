@@ -13,7 +13,7 @@
 
     // visual
     background-color: rgba(4, 4, 4, .5);
-    transition: all .5s linear;
+    transition: all .3s linear;
 
     &--menu-shown {
         // box model
@@ -33,7 +33,8 @@
         clear: both;
     }
 
-    &--gallery {
+    &--gallery,
+    &--black-on-white {
         // visual
         background-color: #ffffff;
     }

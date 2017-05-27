@@ -16,7 +16,9 @@
 @import "about";
 @import "main-footer";
 @import "gallery";
-
+@import "blog";
+@import "simple-footer";
+@import "preorder-option";
 
 a {
     text-decoration: none;
@@ -41,5 +43,11 @@ a {
     @media (min-width: $desktop) {
         // typography
         font-size: 32px;
+    }
+}
+
+.m-only {
+    @media (min-width: $tablet) {
+        display: none;
     }
 }

@@ -102,18 +102,21 @@
         slideDelayCounter--;
     }
 
-    setInterval(changeSlide, 30);
+    //disabled for the time of auction
+    // setInterval(changeSlide, 30);
 
 
     //////////////////////
     // MAIN MENU
     //////////////////////
+    console.log("here");
     var header = document.querySelector(".header");
     var logo = document.querySelector(".logo");
     var mainMenu = document.querySelector(".main-menu");
     var menuButton = document.querySelector(".menu-button");
     
     menuButton.addEventListener("click", function (event) {
+        console.log("menu click");
         if (logo.classList.contains("logo--menu-shown")) {
             header.classList.remove("header--menu-shown");
             logo.classList.remove("logo--menu-shown");
