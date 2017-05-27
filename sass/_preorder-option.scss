@@ -1,0 +1,16 @@
+.preorder-option {
+    // box model
+    display: inline-block;
+
+    &__image {
+        img {
+            // box model
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        // typography
+    }
+}
