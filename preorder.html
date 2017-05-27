@@ -63,7 +63,7 @@
                     <div class="container">
                         <!--<h1 class="post-header__caption">
                             Предзаказ кукол серии «Konfetki» <br>
-                            <!--<time class="post-header__time">ноябрь 2014</time>-->
+                            <time class="post-header__time">ноябрь 2014</time>
                         </h1>-->
                     </div><!--  .container -->
                 </header><!--  .post-header -->
@@ -195,11 +195,120 @@
                             <li>Покраска головы — 10 000 рублей</li>
                             <li>Покраска тела с маникюром и педикюром — 15 000 рублей</li>
                             <li>Покраска кистей и стоп — 6 000 рублей</li>
-                            <li>Стандартный парик из мохера средней длины — 7 000 рублей <br> (цвет и факура фолос на выбор)</li>
+                            <li>Стандартный парик из мохера средней длины — 7 000 рублей <br> (цвет и факура волос на выбор)</li>
                             <li>Обувь, одежда, подставки, парики сложной конструкции — по запросу</li>
                         </ul>
 
                         <p class="post-content__text">Заказы принимаются исключительно через сайт. При оформлении заявки обязательно укажите: полное имя, электронный адрес , телефон, адрес доставки (чтобы сразу можно было посчитать стоимость почтовых услуг) и комментарии к заказу (если они есть).</p>
+
+                        <h2 class="post-content__title">
+                            Форма заявки
+                        </h2>
+
+                        <form class="form" action="" method="POST"  name="">
+                            <fieldset class="form__fieldset">
+                                <label class="form__label">
+                                    Полное имя
+                                    <input type="text" name="name" class="form__input" placeholder="Фамилия Имя Отчество">
+                                </label>
+                                <label class="form__label">
+                                    Телефон
+                                    <input type="text" name="phone" class="form__input" placeholder="+7 (123) 456-78-91">
+                                </label>
+                                <label class="form__label">
+                                    Электронная почта
+                                    <input type="text" name="email" class="form__input" placeholder="user@mail.com">
+                                </label>
+                                <label class="form__label">
+                                    Адрес доставки
+                                    <input type="text" name="address" class="form__input" placeholder="Страна, Город, Адрес">
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Лицо:</legend>
+
+                                <label>
+                                    <input type="radio" name="face" class="form__radio">
+                                    Саша
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="face" class="form__radio">
+                                    Кэнди
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="face" class="form__radio">
+                                    Латика
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Грудной шарнир:</legend>
+
+                                <label>
+                                    <input type="radio" name="breast" class="form__radio">
+                                    Девочка
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="breast" class="form__radio">
+                                    Девушка
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Скинтон:</legend>
+
+                                <label>
+                                    <input type="radio" name="skintone" class="form__radio">
+                                    Карамель
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="skintone" class="form__radio">
+                                    Ваниль
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Дополнительные опции:</legend>
+
+                                <label>
+                                    <input type="checkbox" name="head-brushing" class="form__checkbox">
+                                    Покраска головы
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="body-brushing" class="form__checkbox">
+                                    Покраска тела с маникюром и педикюром
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="hands-feet-brushing" class="form__checkbox">
+                                    Покраска кистей и стоп
+                                </label>
+
+                                <label>
+                                    <input type="checkbox" name="wig" class="form__checkbox">
+                                    Стандартный парик из мохера средней длины
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="shooes" class="form__checkbox">
+                                    Полиуретановые туфли без декоративного оформления
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Комментарий к заказу:</legend>
+
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </fieldset>
+
+                            <input type="submit" class="form__button" value="Подтвердить заказ"></input>
+                        </form>
+
 
                     </div><!--  .container -->
                 </section><!--  .post-content -->
