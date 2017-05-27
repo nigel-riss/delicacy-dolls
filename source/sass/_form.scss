@@ -1,0 +1,66 @@
+.form {
+    // box model
+    padding: 50px;
+    margin-top: 30px;
+
+    // typography
+    font-size: 18px;
+    font-weight: 300;
+
+    // visual
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    &__fieldset {
+        // box model
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+
+        // visual
+        border: none;
+    }
+
+    &__legend {
+        // box model
+        padding-bottom: 10px;
+
+        // typography
+        font-weight: 400;
+        // border: 1px solid red;
+    }
+
+    &__label {
+        // box model
+        margin-top: 20px;
+        margin-bottom: 5px;
+        // typography
+        // color: #e74c3c;
+    }
+
+    &__input {
+        // box model
+        display: block;
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+
+        // visual
+        outline: none;
+        border: none;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+        transition: all .3s ease-out;
+
+        &:focus {
+            // visual
+            background-color: rgba(#f1f1f1, .84);
+        }
+    }
+
+    label {
+        // box model
+        display: block;
+        margin-bottom: 5px;
+    }
+}
