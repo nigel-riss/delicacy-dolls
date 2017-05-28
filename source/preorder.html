@@ -205,23 +205,23 @@
                             Форма заявки
                         </h2>
 
-                        <form class="form" action="" method="POST"  name="">
+                        <form class="form" action="https://formspree.io/delicacydolls@yandex.ru" method="POST"  name="">
                             <fieldset class="form__fieldset">
                                 <label class="form__label">
                                     Полное имя
-                                    <input type="text" name="name" class="form__input" placeholder="Фамилия Имя Отчество">
+                                    <input type="text" name="name" class="form__input" placeholder="Фамилия Имя Отчество" required>
                                 </label>
                                 <label class="form__label">
                                     Телефон
-                                    <input type="text" name="phone" class="form__input" placeholder="+7 (123) 456-78-91">
+                                    <input type="text" name="phone" class="form__input" placeholder="+7 (123) 456-78-91" required>
                                 </label>
                                 <label class="form__label">
                                     Электронная почта
-                                    <input type="text" name="email" class="form__input" placeholder="user@mail.com">
+                                    <input type="text" name="email" class="form__input" placeholder="user@mail.com" required>
                                 </label>
                                 <label class="form__label">
                                     Адрес доставки
-                                    <input type="text" name="address" class="form__input" placeholder="Страна, Город, Адрес">
+                                    <input type="text" name="address" class="form__input" placeholder="Страна, Город, Адрес" required>
                                 </label>
                             </fieldset>
 
@@ -229,17 +229,17 @@
                                 <legend class="form__legend">Лицо:</legend>
 
                                 <label>
-                                    <input type="radio" name="face" class="form__radio">
+                                    <input type="radio" name="face" class="form__radio" value="sasha" required>
                                     Саша
                                 </label>
 
                                 <label>
-                                    <input type="radio" name="face" class="form__radio">
+                                    <input type="radio" name="face" class="form__radio" value="candy" required>
                                     Кэнди
                                 </label>
 
                                 <label>
-                                    <input type="radio" name="face" class="form__radio">
+                                    <input type="radio" name="face" class="form__radio" value="latika" required>
                                     Латика
                                 </label>
                             </fieldset>
@@ -248,12 +248,12 @@
                                 <legend class="form__legend">Грудной шарнир:</legend>
 
                                 <label>
-                                    <input type="radio" name="breast" class="form__radio">
+                                    <input type="radio" name="breast" class="form__radio" value="girl" required>
                                     Девочка
                                 </label>
 
                                 <label>
-                                    <input type="radio" name="breast" class="form__radio">
+                                    <input type="radio" name="breast" class="form__radio" value="adult" required>
                                     Девушка
                                 </label>
                             </fieldset>
@@ -262,12 +262,12 @@
                                 <legend class="form__legend">Скинтон:</legend>
 
                                 <label>
-                                    <input type="radio" name="skintone" class="form__radio">
+                                    <input type="radio" name="skintone" class="form__radio" value="caramel" required>
                                     Карамель
                                 </label>
 
                                 <label>
-                                    <input type="radio" name="skintone" class="form__radio">
+                                    <input type="radio" name="skintone" class="form__radio" value="vanilla" required>
                                     Ваниль
                                 </label>
                             </fieldset>
@@ -303,7 +303,7 @@
                             <fieldset class="form__fieldset">
                                 <legend class="form__legend">Комментарий к заказу:</legend>
 
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="additional-info" id="" cols="30" rows="10"></textarea>
                             </fieldset>
 
                             <input type="submit" class="form__button" value="Подтвердить заказ"></input>
