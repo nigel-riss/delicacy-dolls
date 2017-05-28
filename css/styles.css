@@ -1513,6 +1513,10 @@ html {
     display: block;
     margin-bottom: 5px;
 }
+.form textarea {
+    width: 100%;
+    resize: none;
+}
 
 a {
     text-decoration: none;

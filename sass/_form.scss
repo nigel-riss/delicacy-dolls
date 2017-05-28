@@ -63,4 +63,12 @@
         display: block;
         margin-bottom: 5px;
     }
+
+    textarea {
+        // box model
+        width: 100%;
+
+        // other
+        resize: none;
+    }
 }
