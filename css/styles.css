@@ -1502,7 +1502,7 @@ html {
     width: 100%;
     outline: none;
     border: none;
-    border: 1px solid #eeeeee;
+    border: 1px solid #cccccc;
     border-radius: 5px;
     transition: all .3s ease-out;
 }
@@ -1515,6 +1515,8 @@ html {
 }
 .form textarea {
     width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
     resize: none;
 }
 

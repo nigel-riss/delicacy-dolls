@@ -48,7 +48,7 @@
         // visual
         outline: none;
         border: none;
-        border: 1px solid #eeeeee;
+        border: 1px solid #cccccc;
         border-radius: 5px;
         transition: all .3s ease-out;
 
@@ -67,6 +67,10 @@
     textarea {
         // box model
         width: 100%;
+
+        // visual
+        border: 1px solid #cccccc;
+        border-radius: 5px;
 
         // other
         resize: none;
