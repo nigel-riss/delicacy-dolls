@@ -1358,10 +1358,15 @@ html {
 }
 .post-content__main-title {
     padding: 0 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 60px;
     font-weight: 100;
     font-size: 48px;
+    line-height: 1;
+}
+.post-content__main-title a {
+    color: #e74c3c;
+    font-size: 18px;
 }
 .post-content__title {
     padding: 0 20px;
